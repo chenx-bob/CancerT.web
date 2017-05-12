@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>BioCircos.js</title>
+    </head>
+    <body>
+        <!-- BioCircos.js, Jquery.js and D3.js import -->
+        <script src="./lib/jquery.js"></script>
+        <script src="./lib/d3.js"></script>
+        <script src="./lib/biocircos-1.1.0.js"></script>
+        <!-- Prepare a <div> tag with "biocircos" id to set the picture position your will draw in html -->
+        <div id="biocircos"></div>
+<!-- Data configuration -->
+<script src="./circos.js/SCATTER_GENE.js"></script>
+<script src="./circos.js/SNP_SNV.js"></script>
+<script src="./circos.js/SCATTER_CNV.js"></script>
+<script src="./circos.js/SCATTER_GEX.js"></script>
+<script src="./circos.js/SCATTER_MET.js"></script>
+<script src="./circos.js/LINK_SV.js"></script>
+<script src="./circos.js/background.js"></script>
+<!-- Genome configuration -->
+<script>
+  var BioCircosGenome = [ 
+     ["1" , 247249719],
+     ["2" , 242951149],
+     ["3" , 199501827],
+     ["4" , 191273063],
+     ["5" , 180857866],
+     ["6" , 170899992],
+     ["7" , 158821424],
+     ["8" , 146274826],
+     ["9" , 140273252],
+     ["10" , 135374737],
+     ["11" , 134452384],
+     ["12" , 132349534],
+     ["13" , 114142980],
+     ["14" , 106368585],
+     ["15" , 100338915],
+     ["16" , 88827254],
+     ["17" , 78774742],
+     ["18" , 76117153],
+     ["19" , 63811651],
+     ["20" , 62435964],
+     ["21" , 46944323],
+     ["22" , 49691432],
+     ["X" , 154913754],
+     ["Y" , 57772954]
+  ];
+  BioCircos01 = new BioCircos(BACKGROUND01,BACKGROUND02,BACKGROUND03,BACKGROUND04,BACKGROUND05,ARC_hg19,TEXT01,TEXT02,TEXT03,TEXT04,TEXT05,TEXT06,SNP_SNV,SCATTER_GENE,LINK_SV,SCATTER_CNV,SCATTER_GEX,SCATTER_MET,BioCircosGenome,{
+     target : "biocircos",
+     svgWidth : 900,
+     svgHeight : 600,
+     LINKMouseOverDisplay: true,
+     LINKMouseOverOpacity : 1.0,
+     LINKMouseOverStrokeColor : "none",
+     LINKMouseOverStrokeWidth : 5,
+     LINKMouseOutDisplay : true,
+     LINKMouseOutAnimationTime : 800,
+     LINKMouseOutStrokeColor : "none",
+     LINKMouseOutStrokeWidth : 3,
+     SCATTERMouseOverDisplay : true,
+     SCATTERMouseOverTooltipsHtml01 : "chr : ",
+     SCATTERMouseOverTooltipsHtml02 : "<br>start : ",
+     SCATTERMouseOverTooltipsHtml03 : "<br>end : ",
+     SCATTERMouseOverTooltipsHtml04 : "<br>name : ",
+     SCATTERMouseOverTooltipsHtml05 : "<br>des : ",
+     SCATTERMouseOverTooltipsHtml06 : "",
+     SCATTERMouseOutDisplay : true,
+     SCATTERMouseOutAnimationTime : 800,
+     SCATTERMouseOutColor : "none",
+		 SNPMouseOverDisplay : true,
+		 SNPMouseOverTooltipsHtml01 : "chr : ",
+	   SNPMouseOverTooltipsHtml02 : "<br>position : ",
+	   SNPMouseOverTooltipsHtml03 : "<br>dann : ",
+	   SNPMouseOverTooltipsHtml04 : "<br>des : ",
+	   SNPMouseOverTooltipsHtml05 : "",
+	   SNPMouseOverTooltipsPosition : "absolute",
+	   SNPMouseOverTooltipsBackgroundColor : "white",
+	   SNPMouseOverTooltipsBorderStyle : "solid",
+	   SNPMouseOverTooltipsBorderWidth : 0,
+	   SNPMouseOverTooltipsPadding : "3px",
+	   SNPMouseOverTooltipsBorderRadius : "3px",
+	   SNPMouseOverTooltipsOpacity : 0.8,
+  	 SNPMouseOutDisplay : true,
+   	 SNPMouseOutAnimationTime : 800,
+   	 SNPMouseOutColor : "none",
+  });
+  BioCircos01.draw_genome(BioCircos01.genomeLength); 
+</script>
+    </body>
+</html>
