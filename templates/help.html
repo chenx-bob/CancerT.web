@@ -1,0 +1,209 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>{$title}</title>
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/bootstrap-table.css">
+<link rel="stylesheet" href="http://rawgit.com/vitalets/x-editable/master/dist/bootstrap3-editable/css/bootstrap-editable.css">
+<link rel="stylesheet" href="css/stylesheet.css" />
+<link rel="stylesheet" href="css/nav.css" />
+<script src="lib/jquery-1.12.1.min.js"></script>
+<script src="lib/cancerT.js"></script>
+<script src="lib/backbone.js" type="text/javascript"></script>
+<script src="lib/ga.js" type="text/javascript"></script>
+<script src="lib/nav.js" type="text/javascript"></script>
+<script src="lib/bootstrap.min.js"></script>
+<script src="lib/bootstrap-table.js"></script>
+<script src="lib/bootstrap-table-export.js"></script>
+<script src="http://rawgit.com/hhurz/tableExport.jquery.plugin/master/tableExport.js"></script>
+<script src="http://rawgit.com/vitalets/x-editable/master/dist/bootstrap3-editable/js/bootstrap-editable.js"></script>
+</head>
+<body>
+<div id="watermark"></div>
+<div>
+  <div class="navbar">
+    <div class="navi">
+      <div class="nav-brand"><a href="#/"><img class="logo-brand" src="img/cancerT.png"></a></div>
+      <div id="nav-ui">
+        <ul>
+          <li><a href="index.php">Home</a></li>
+          <li><a href="contribute.php">Contribute</a></li>
+          <li><a href="cancer_browser.php">Cancer Browser</a></li>
+          <li><a href="gene_browser.php">Gene Browser</a></li>
+          <li><a href="search.php">Search Tool</a></li>
+          <li><a href="data.php">Data Access</a></li>
+          <li><a href="help.php">Help</a></li>
+          <li><a href="news.php">News</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="content">
+      <div id="content-navigation" class="content-browser-left">
+        <div class="expandable-navigation-container">
+          <ul class="expandable-navigation" id="">
+            <li class="menu_li"> <a href="help.php" class="currentpage">Cancer Drug</a> </li>
+            <li class="menu_li"> <span class="fake-anchor expandable">Precision Cancer Therapy</span>
+              <ul class="submenu closed">
+                {foreach $genelist as $key=>$val}
+                <li class="submenu_li"> <a class="subitem" href="help.php?gene={$key}">{$key}</a> </li>
+                {/foreach}
+              </ul>
+            </li>
+            <li class="menu_li"> <a href="help.php?oncotree" class="currentpage">CMO Tumor Type Tree V1.1</a></li>
+            <li class="menu_li"> <a href="terms.php" class="currentpage">Usage Terms</a> </li>
+            <li class="menu_li"> <a href="#" class="currentpage">Data Access</a> </li>
+            <li class="menu_li"> <a href="help.php?submit" class="currentpage">How you can contribute</a> </li>
+            <li class="menu_li"> <a href="help.php?level" class="currentpage">Level of evidence</a> </li>
+            <li class="menu_li"> <a href="help.php?level" class="currentpage">Type of evidence</a> </li>
+            <li class="menu_li"> <a href="help.php" class="currentpage">How to use?</a> </li>
+            <ul style="clear:both;">
+            </ul>
+          </ul>
+        </div>
+      </div>
+      <div class="content-browser-right"> {if isset($st['gene']) }
+        <h4>{$gene} summary for cancer therapy:</h4>
+        <p>{$pct_gene.therapy_evidence}</p>
+        <p>​​&#8203;​​&#8203;</p>
+        <h4>{$gene} for specific drug in cancer therapy:</h4>
+        <table data-toggle="table" data-card-view='true' data-height='getHeight()'>
+          <thead>
+            <tr>
+              <th data-sortable='true'>Drug Name</th>
+              <th data-sortable='true'>Drug Family</th>
+              <th data-sortable='true'>Evidence Level</th>
+              <th data-sortable='true'>Clinical Significance</th>
+              <th>Evidence</th>
+              <th>Contradictory Evidence</th>
+              <th>Supports</th>
+            </tr>
+          </thead>
+          <tbody>
+          
+          {foreach $pct_drug as $key=>$val}
+          <tr>
+            <td>{$val.gene_drug}</td>
+            <td>{$val.gene_drug_family}</td>
+            <td>{$val.evidence_level}</td>
+            <td>{$val.evidence_clinical_significance}</td>
+            <td>{$val.evidence}</td>
+            <td>{$val.contradictory_evidence}</td>
+            <td><a style="cursor:pointer" onclick='alert("{$val.supports}")'>support</a></td>
+          </tr>
+          {/foreach}
+            </tbody>
+          
+        </table>
+        {/if}
+        {if isset($st['oncotree'])}
+        <iframe src="templates/CMO.html" name="myframe"  width="800" height="980"  scrolling="yes" frameborder="0" id="myframe" border="0"></iframe>
+        {/if}
+        {if count($st) == 0}
+        <h4>Cancer drug:</h4>
+        <table data-toggle="table" data-height='getHeight()'>
+          <thead>
+            <tr>
+              <th data-sortable='true'>Drug Name</th>
+              <th  data-sortable='true'>Development</th>
+              <th data-sortable='true'>Phase</th>
+              <th>Indication and Link</th>
+            </tr>
+          </thead>
+          <tbody>
+          
+          {foreach $drugs as $key=>$val}
+          <tr>
+            <td>{$val.drug_name}</td>
+            <td>{$val.development}</td>
+            <td>{$val.phase}</td>
+            <td>{$val.indications_and_link}</td>
+          </tr>
+          {/foreach}
+            </tbody>
+          
+        </table>
+        {/if}
+        {if isset($st['level']) }
+        	<table data-toggle="table">
+                	<tr>
+                    	<th>level I</th>
+                        <td>disease-associated consensus biomarker of response to an approved drug in human medicine"</td>
+                    </tr><tr>
+                        <th>level II</th>
+                        <td>disease-associated standard care biomarker of response to an approved drug in clinical medicine</td>
+                    </tr><tr>
+                        <th>level III</th>
+                        <td>patient clinical data or other clinical evidence supports the biomarker as indication of drug response</td>
+                    </tr><tr>
+                        <th>level IV</th>
+                        <td>case reports or preclinical trials  in human support the trait as a biomarker of drug response</td>
+                    </tr><tr>
+                        <th>level V</th>
+                        <td>in vivo or in vitro models support the trait as a biomarker of drug response</td>
+                    </tr><tr>
+                   	    <th>level VI</th>
+                        <td>the triat as biomarker by indirect evidence</td>     
+                    </tr>
+                	<tr>
+                    	<th>level A</th>
+                        <td>Proven/consensus association in human medicine.</td>
+                    </tr><tr>
+                        <th>level B</th>
+                        <td>Clinical trial or other primary patient data supports association.</td>
+                    </tr><tr>
+                        <th>level C</th>
+                        <td>Individual case reports from clinical journals.</td>
+                    </tr><tr>
+                        <th>level D</th>
+                        <td>In vivo or in vitro models support association</td>
+                    </tr><tr>
+                        <th>level E</th>
+                        <td>Indirect evidence.</td>
+                    </tr>
+            </table>
+        {/if}
+        {if isset($st['submit']) }
+        <p>There are several ways you can make a contribution to this important problem:</p>
+        <p><strong>1. Add</strong><br />
+          Propose a new genomic variant (e.g. single nucleotide substitution, structural variant, gene fusion, etc.), add evidence statements that support clinical actions associated with such variants, or help create a synthesized interpretation or summary of the corpus of evidence for a variant.</p>
+        <p><strong>2. Approve</strong><br />
+          Community Editors and Moderators may approve submitted evidence items, after which the community may view and edit the item.</p>
+        <p><strong>3. View</strong><br />
+          Make use of the community-created content in your own research by browsing, searching, and examining detailed evidence items. All CIViC data and source code are provided freely for almost any use.</p>
+        <p><strong>4. Edit</strong><br />
+          Submit a correction or addition to any details about a genomic event, evidence statement, or interpretation.</p>
+        <p><strong>5. Discuss</strong><br />
+          Participate in an ongoing discussion in an effort to reach community consensus on the appropriate clinical action(s) for a genomic event.</p>
+        <p><strong>6. Apply/Reject</strong><br />
+          Editors and Moderators may apply or reject the edits made by other community members, after taking into account community discussions and opinion.</p>
+        <p>Before commenting, correcting, or creating, please visit the help and FAQ pages to learn more about the CIViC data model and browse the existing content for examples. Understand the data model but unsure of where to start? Check out our list of high priority genes for inspiration.</p>
+        </p>
+        {/if} 
+        </div>
+    </div>
+    <script type="text/javascript">
+	function operateFormatter(value, row, index) {
+		var e = '';
+		
+		if(value.length > 0){
+        	var e = '<a style="cursor:pointer" onclick=alert("' + "234ss "+"d" + '")>support</a>';
+		}
+        return e;
+    }
+    </script>
+    <div style="clear:both"></div>
+  </div>
+</div>
+</div>
+<div class="footer">
+  <div class="foot">
+    <p>Copyright © 2017 <a href="http://synergylab.info">SynergyLab</a> | All Rights Reserved</p>
+    <p style="font-size:12px;">CancerT is intended for research purposes only. Its information cannot be copied or redistributed. Please review the <a href="terms.php">usage terms</a> before continuing.</p>
+  </div>
+</div>
+</div>
+</body>
+</html>

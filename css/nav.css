@@ -1,0 +1,169 @@
+/*
+ * Section Navigation CSS
+ */
+
+
+#content-navigation .expandable-navigation > li > a:before,
+#content-navigation .expandable-navigation > li > span.fake-anchor:before
+{
+    left: 5px;
+}
+
+#content-navigation .expandable-navigation > li > a.expandable:before,
+#content-navigation .expandable-navigation > li > span.fake-anchor.expandable:before
+{
+    left: 5px;
+    font-size: 1.4em;
+}
+
+/*
+ * Expandable Navigation CSS
+ */
+
+
+.expandable-navigation ul,li{
+    line-height: 2;
+    padding: 0;
+    margin: 0;
+    list-style-type: disc;
+}
+.expandable-navigation {
+	background: none repeat scroll 0 0 rgba(39,69,112,0.3);
+	border: 1px solid rgba(39,69,112,0.3);
+	border-bottom-right-radius: 5px;
+	border-top-right-radius: 5px;
+	padding: 15px 0;
+	margin: 0;
+	overflow: visible;
+	position: relative;
+}
+.expandable-navigation li {
+	display: block;
+	margin: 0;
+	padding: 0;
+	border-bottom: 1px solid rgba(39,69,112,0.3);
+	vertical-align: bottom;
+	position: relative;
+	width:100%;
+
+}
+.expandable-navigation li.currentpageparent {
+	background: rgba(255,153,0,0.8);/*overflow-y: hidden;*/
+}
+.expandable-navigation li.currentpageparent a.currentpage {
+	background: url(../img/chevron_yellow.png) no-repeat scroll right center transparent;
+	color: rgba(0,0,0,1);
+	width: 90%;
+}
+.subitem.currentpage {
+	width: 95% !important;
+}
+ul.expandable-navigation li:first-child {
+	border-top: 1px solid rgba(39,69,112,0.3);}
+span.fake-anchor {
+	cursor: pointer;
+}
+.expandable-navigation > li > a:before, .expandable-navigation > li > span.fake-anchor:before {
+	position: absolute;
+	content: "\2022";
+	color: #02359A;
+	font-size: 1.6em;
+	line-height: 1em;
+	left: 6px;
+	top:9px;
+}
+.expandable-navigation > li > a.expandable:before, .expandable-navigation > li > span.expandable.fake-anchor:before {
+	content: "\25B8";
+	font-size: 1.3em;
+	line-height: 1em;
+	left: 3px;
+	top:9px;
+}
+.expandable-navigation > li > a:hover:before, .expandable-navigation > li > span.fake-anchor:hover:before {
+	color: rgba(255,255,255,1);
+}
+.expandable-navigation > li > a.expandable.expanded:before, .expandable-navigation > li > span.expandable.expanded.fake-anchor:before {
+	content: "\25BE";
+}
+.expandable-navigation a, .expandable-navigation span.fake-anchor {
+	display: block;
+	position: relative;
+	background: rgba(255,255,255,1);
+	border: none;
+	font-size: 12px;
+	padding: 4px 20px;
+	text-decoration: none;
+	color: #000;
+	line-height:30px;
+}
+.expandable-navigation a.subitem {
+	background-color: rgba(236,236,236,1);
+	padding: 4px 10px;
+}
+.expandable-navigation a:hover,  .expandable-navigation span.fake-anchor:hover {
+	background: rgba(255,153,0,0.5);
+	color: #fff;
+}
+.expandable-navigation li ul.submenu {
+	display: none;
+}
+.expandable-navigation li ul.submenu.expanded {
+	display: block;
+}
+.expandable-navigation-container {
+	margin-bottom: 20px;
+}
+
+#content-tabi ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: block;
+	height: 30px;
+	line-height: 30px;
+}
+#content-tabi li {
+	cursor: pointer;
+	float: left;
+	list-style: none;
+	height: 29px;
+	line-height: 29px;
+	padding: 0px 25px;
+	margin: 0 10px 0px 0px;
+	border: 1px solid rgba(39,69,112,0.5);
+	/*border-bottom: 1px solid rgba(39,69,112,0.5);*/
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	background: rgba(39,69,112,0.3);
+}
+#content-tabi li:hover {
+	/*	border-top: 1px solid Saddlebrown;*/
+	background:rgba(255,153,0,0.5);
+}
+#content-tabi li.on {
+	/*	border-top: 1px solid Saddlebrown;*/
+	border-bottom: 1px solid rgba(255,255,255,1);
+	background: rgba(255,255,255,1);
+}
+.content-tabs {
+	min-height: 200px;
+	line-height: 24px;
+	border-top: none;
+	padding: 1px;
+	border: 1px solid rgba(39,69,112,0.5);
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	padding: 10px;
+}
+.content-tabs h2{
+	margin:0;
+	padding:0;	
+}
+.content-tabs.singleton {
+	border: none;
+	padding:0;
+}
+.content-tabs.hide {
+	display: none;
+}

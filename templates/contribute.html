@@ -1,0 +1,277 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>{$title}</title>
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/stylesheet.css" />
+<link rel="stylesheet" href="css/nav.css" />
+<style>
+input,select,textarea {
+	width: 100%;
+	padding: 5px;
+	margin-right: 30px;
+	/*background-color:rgba(255,255,255,1);*/
+
+}
+select{
+	-webkit-appearance: none;
+	padding: 0 5px;
+}
+
+input.button {
+	width: 90px;
+	height: 30px;
+	background: rgba(255,255,255,1);
+	text-align: center;
+	vertical-align: middle;
+	border: 1px solid rgba(39,69,112,0.3);
+	border-radius: 5px;
+	cursor: pointer;
+	color: rgba(0,0,0,1);
+	/*text-transform: uppercase;*/
+	/*padding:0 10px;*/
+	font-size: 13px;
+	position: relative;
+	left: 280px;
+}
+input.button:hover {
+	background: rgba(255,153,0,1);
+	color: rgba(255,255,255,1);
+}
+.table {
+	text-align: left;
+	vertical-align: middle;
+}
+th.table {
+	width: 150px;
+}
+</style>
+<script src="lib/jquery-1.12.1.min.js"></script>
+<script src="lib/cancerT.js"></script>
+<script src="lib/nav.js" type="text/javascript"></script>
+<script src="lib/bootstrap.min.js"></script>
+</head>
+
+<body>
+<div id="watermark"></div>
+<div>
+  <div class="navbar">
+    <div class="navi">
+      <div class="nav-brand"><a href="#/"><img class="logo-brand" src="img/cancerT.png"></a></div>
+      <div id="nav-ui">
+        <ul>
+          <li><a href="index.php">Home</a></li>
+          <li><a href="contribute.php">Contribute</a></li>
+          <li><a href="cancer_browser.php">Cancer Browser</a></li>
+          <li><a href="gene_browser.php">Gene Browser</a></li>
+          <li><a href="search.php">Search Tool</a></li>
+          <li><a href="data.php">Data Access</a></li>
+          <li><a href="help.php">Help</a></li>
+          <li><a href="news.php">News</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="content">
+      <div id="content-navigation" class="content-browser-left">
+        <div class="expandable-navigation-container">
+          <ul class="expandable-navigation" id="">
+            <li class="menu_li"> <a href="contribute.php?submit" class="currentpage">Submit New Traits</a> </li>
+            <li class="menu_li"> <a href="contribute.php?suggest" class="currentpage">Suggest Source</a></li>
+            <ul style="clear:both;">
+            </ul>
+          </ul>
+        </div>
+      </div>
+      <div class="content-browser-right">
+        <div class="content-contribute-right"> {if isset($st['submit']) || empty($st)}
+          <h4>Submit New Traits</h4>
+          <div class="text_bg">
+            <p>To add an evidence item, please complete the following form, provide a short statement supporting its inclusion into the CIViC database, then click the 'Submit Evidence for Inclusion' button. If you are having difficulty filling in all of the required fields please use the Suggest Source form to suggest a publication for curators to review.<br />
+              <br />
+              Please ensure that your submission contains no Protected Health Information, and is your own original work. By submitting evidence to CIViC you agree to release it to the public domain as described by the Creative Commons Public Domain Dedication (CC0 1.0 Universal).</p>
+          </div>
+          <p>​​&#8203;​​&#8203;</p>
+          <form class="search_form" method='post' action='contribute.php'>
+            <table class="table">
+              <tr>
+                <th>* Gene Entrez Name (<a style="cursor:pointer" onclick='alert("This field is required.\n\nEntrez Gene name (e.g. BRAF). Gene name must be known to the Entrez database.")'>?</a>):</th>
+                <td></td>
+                <td><input type='text' name='gene_name'></td>
+              </tr>
+              <tr>
+                <th>* Variant Name (<a style="cursor:pointer" onclick='alert("Description of the type of variant (e.g., V600E, BCR-ABL fusion, Loss-of-function, exon 12 mutations). Should be as specific as possible (i.e., specific amino acid changes).")'>?</a>):</th>
+                <td></td>
+                <td><input type='text' name='variant_name'></td>
+              </tr>
+              <tr>
+                <th>* Pubmed ID (<a style="cursor:pointer" onclick='alert("PubMed ID for the publication associated with the evidence statement (e.g. 23463675)")'>?</a>):</th>
+                <td></td>
+                <td><input type='text' name='pmid'></td>
+              </tr>
+              <tr>
+                <th> Variant Type (<a style="cursor:pointer" onclick='alert("variant type")'>?</a>):</th>
+                <td></td>
+                <td><select name="vtype">
+                    <option>Please select an variant type</option>
+                    <option>SV</option>
+                    <option>MET</option>
+                    <option>EX</option>
+                    <option>CNV</option>
+                  </select></td>
+              </tr>
+              <tr>
+                <th>* Cancer Type (<a style="cursor:pointer" onclick='alert("Please enter a disease name. If you are unable to locate the disease in the dropdown, please check the `Could not find disease` checkbox below and enter the disease in the field that appears.")'>?</a>):</th>
+                <td></td>
+                <td><input type='text' name='cancer'></td>
+              </tr>
+              <tr>
+                <th>* Evidence Statement (<a style="cursor:pointer" onclick='alert("Description of evidence from published medical literature detailing the association of or lack of association of a variant with diagnostic, prognostic or predictive value in relation to a specific disease (and treatment for predictive evidence). Data constituting protected health information (PHI) should not be entered. Please familiarize yourself with your jurisdiction definition of PHI before contributing.")'>?</a>):</th>
+                <td></td>
+                <td><textarea rows="3" name='statement'></textarea></td>
+              </tr>
+              <tr>
+                <th>* Evidence Type (<a style="cursor:pointer" onclick='alert("Type of clinical outcome associated with the evidence statement.")'>?</a>):</th>
+                <td></td>
+                <td><select name="etype">
+                    <option>Please select an evidence type</option>
+                    <option>SNP</option>
+                    <option>SV</option>
+                    <option>MET</option>
+                    <option>EX</option>
+                    <option>CNV</option>
+                  </select></td>
+              </tr>
+              <tr>
+                <th>* Evidence Level (<a style="cursor:pointer" onclick='alert("Type of study performed to produce the evidence statement")'>?</a>):</th>
+                <td></td>
+                <td><select name="elevel">
+                    <option>Please select an evidence level</option>
+                    <option>SV</option>
+                    <option>MET</option>
+                    <option>EX</option>
+                    <option>CNV</option>
+                  </select></td>
+              </tr>
+              <tr>
+                <th>* Clinical Significance (<a style="cursor:pointer" onclick='alert("Positive or negative association of the Variant with predictive, prognostic, diagnostic, or predisposing evidence types. If the variant was not associated with a positive or negative outcome, N/A should be selected. Evidence Type must be selected before this field is enabled.")'>?</a>):</th>
+                <td></td>
+                <td><select name="significance">
+                    <option>Please select a clinical significance</option>
+                    <option>SV</option>
+                    <option>MET</option>
+                    <option>EX</option>
+                    <option>CNV</option>
+                  </select></td>
+              </tr>
+              <th>Additional Comments (<a style="cursor:pointer" onclick='alert("Please provide any additional comments you wish to make about this evidence item. This comment will appear as the first comment in this item comment thread.")'>?</a>):</th>
+                <td></td>
+                <td><textarea rows="3" name='comment'></textarea></td>
+              </tr>
+            </table>
+            <input class="button" type="submit" value="Submit">
+            <input class="button" type="reset" value="Reset">
+          </form>
+          {/if}
+          {if isset($st['suggest'])}
+          <h4>Suggest Source</h4>
+          <div class="text_bg">
+            <p>If you have a source publication that you believe to contain research relevant to CIViC's curation efforts, the community would appreciate your input! Please specify as many details as you can using the form below (only the Pubmed ID and Comment are required). Your suggested source will be placed in the source curation queue, and you will be given a suggestion credit if your suggestion results in a new Evidence Item added to the CIViC database.</p>
+          </div>
+          <p>​​&#8203;​​&#8203;</p>
+          <form class="search_form" method='post' action='contribute.php'>
+            <table class="table">
+              <tr>
+                <th>* Gene Entrez Name (<a style="cursor:pointer" onclick='alert("This field is required.\n\nEntrez Gene name (e.g. BRAF). Gene name must be known to the Entrez database.")'>?</a>):</th>
+                <td></td>
+                <td><input type='text' name='gene_name'></td>
+              </tr>
+              <tr>
+                <th>* Variant Name (<a style="cursor:pointer" onclick='alert("Description of the type of variant (e.g., V600E, BCR-ABL fusion, Loss-of-function, exon 12 mutations). Should be as specific as possible (i.e., specific amino acid changes).")'>?</a>):</th>
+                <td></td>
+                <td><input type='text' name='variant_name'></td>
+              </tr>
+              <tr>
+                <th>* Pubmed ID (<a style="cursor:pointer" onclick='alert("PubMed ID for the publication associated with the evidence statement (e.g. 23463675)")'>?</a>):</th>
+                <td></td>
+                <td><input type='text' name='pmid'></td>
+              </tr>
+              <tr>
+                <th> Variant Type (<a style="cursor:pointer" onclick='alert("variant type")'>?</a>):</th>
+                <td></td>
+                <td><select name="vtype">
+                    <option>SNP</option>
+                    <option>SV</option>
+                    <option>MET</option>
+                    <option>EX</option>
+                    <option>CNV</option>
+                  </select></td>
+              </tr>
+              <tr>
+                <th>* Cancer Type (<a style="cursor:pointer" onclick='alert("Please enter a disease name. If you are unable to locate the disease in the dropdown, please check the `Could not find disease` checkbox below and enter the disease in the field that appears.")'>?</a>):</th>
+                <td></td>
+                <td><input type='text' name='cancer'></td>
+              </tr>
+              <tr>
+                <th>* Evidence Statement (<a style="cursor:pointer" onclick='alert("Description of evidence from published medical literature detailing the association of or lack of association of a variant with diagnostic, prognostic or predictive value in relation to a specific disease (and treatment for predictive evidence). Data constituting protected health information (PHI) should not be entered. Please familiarize yourself with your jurisdiction definition of PHI before contributing.")'>?</a>):</th>
+                <td></td>
+                <td><textarea rows="3" name='statement'></textarea></td>
+              </tr>
+              <tr>
+                <th>* Evidence Type (<a style="cursor:pointer" onclick='alert("Type of clinical outcome associated with the evidence statement.")'>?</a>):</th>
+                <td></td>
+                <td><select name="etype">
+                    <option>Please select an evidence type</option>
+                    <option>SNP</option>
+                    <option>SV</option>
+                    <option>MET</option>
+                    <option>EX</option>
+                    <option>CNV</option>
+                  </select></td>
+              </tr>
+              <tr>
+                <th>* Evidence Level (<a style="cursor:pointer" onclick='alert("Type of study performed to produce the evidence statement")'>?</a>):</th>
+                <td></td>
+                <td><select name="elevel">
+                    <option>Please select an evidence level</option>
+                    <option>SV</option>
+                    <option>MET</option>
+                    <option>EX</option>
+                    <option>CNV</option>
+                  </select></td>
+              </tr>
+              <tr>
+                <th>* Clinical Significance (<a style="cursor:pointer" onclick='alert("Positive or negative association of the Variant with predictive, prognostic, diagnostic, or predisposing evidence types. If the variant was not associated with a positive or negative outcome, N/A should be selected. Evidence Type must be selected before this field is enabled.")'>?</a>):</th>
+                <td></td>
+                <td><select name="significance">
+                    <option>Please select a clinical significance</option>
+                    <option>SV</option>
+                    <option>MET</option>
+                    <option>EX</option>
+                    <option>CNV</option>
+                  </select></td>
+              </tr>
+              <th>Additional Comments (<a style="cursor:pointer" onclick='alert("Please provide any additional comments you wish to make about this evidence item. This comment will appear as the first comment in this item comment thread.")'>?</a>):</th>
+                <td></td>
+                <td><textarea rows="3" name='comment'></textarea></td>
+              </tr>
+            </table>
+            <input class="button" type="submit" value="Submit">
+            <input class="button" type="reset" value="Reset">
+          </form>
+          {/if} </div>
+        <div style="clear:both"></div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="foot">
+      <p>Copyright © 2017 <a href="http://synergylab.info">SynergyLab</a> | All Rights Reserved</p>
+      <p style="font-size:12px;">CancerT is intended for research purposes only. Its information cannot be copied or redistributed. Please review the <a href="terms.php">usage terms</a> before continuing.</p>
+    </div>
+  </div>
+</div>
+</body>
+</html>

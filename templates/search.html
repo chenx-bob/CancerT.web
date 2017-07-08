@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>{$title}</title>
+<link rel="stylesheet" href="css/stylesheet.css" />
+<script src="lib/jquery-1.12.1.min.js"></script>
+<script src="lib/cancerT.js"></script>
+<script type="application/javascript">
+    var base_url = function(uri, with_mode, keep_ref, keep_other_params, additional_params) {
+
+        var base = 'http://localhost/CancerT/';
+        var mode_base = 'http://localhost/CancerT/';
+        var url = (with_mode === true ? mode_base : base);
+        if (url.length > 1 && url.charAt(url.length - 1) !== '/')
+            url += '/';
+
+        if (uri === undefined)
+            uri = '';
+        else
+            uri = $.trim(uri.toLowerCase());
+
+        if (uri.charAt(0) === '/')
+            uri = uri.substr(1);
+
+        if (uri.length > 1 && uri.charAt(uri.length - 1) !== '/')
+             uri += '';
+		//$("h2").append(url + uri + build_url_query_param_string(keep_ref, keep_other_params, additional_params));
+        return url + uri + build_url_query_param_string(keep_ref, keep_other_params, additional_params);
+		
+    }
+</script>
+
+<script src="lib/url.js"></script>
+
+</head>
+
+<body>
+<div id="watermark"></div>
+<div>
+  <div class="navbar">
+    <div class="navi">
+      <div class="nav-brand"><a href="#/"><img class="logo-brand" src="img/cancerT.png"></a></div>
+      <div id="nav-ui">
+        <ul>
+          <li><a href="index.php">Home</a></li>
+          <li><a href="contribute.php">Contribute</a></li>
+          <li><a href="cancer_browser.php">Cancer Browser</a></li>
+          <li><a href="gene_browser.php">Gene Browser</a></li>
+          <li><a href="search.php">Search Tool</a></li>
+          <li><a href="data.php">Data Access</a></li>
+          <li><a href="help.php">Help</a></li>
+          <li><a href="news.php">News</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="content">
+      <div class="content-search-left">
+        <div class="content-search-form">
+          <h3>Search Traits by Tumor Type</h3>
+          <form name="TumorContentSearch" id="TumorContentSearch">
+          	<label for="TissueDropdown"> <span class="label_text"> Tissue (required): </span>
+              <select name="tissue" id="TissueDropdown">
+                <option value="">Select Tissue</option>
+              </select>
+            </label>
+            <label for="TumorDropdown"> <span class="label_text"> Tumor (required): </span>
+              <select name="tumor" id="TumorDropdown" disabled="">
+                <option value="">Select Tissue First</option>
+              </select>
+            </label>
+            <label for="GeneDropdown"> <span class="label_text"> Gene (optional): </span>
+              <select name="gene" id="GeneDropdown" disabled="">
+                <option value="">Select Tissue First</option>
+              </select>
+            </label>
+<!--            <label for="variant_dropdown"> <span class="label_text"> Variant (optional): </span>
+              <select name="variant" id="VariantDropdown" disabled="">
+                <option value="">Select Tissue First</option>
+              </select>
+            </label>-->
+            <input class="button" type="submit" value="Search">
+          </form>
+        </div>
+        <div class="content-search-form">
+        <h3>Search Case of Traits by Gene</h3>
+          <form name="GeneContentSearch" id="GeneContentSearch">
+            <label for="GenesDropdown"> <span class="label_text"> Gene (required): </span>
+              <select name="Genes" id="GenesDropdown">
+                <option value="" selected="" default="">Select Gene</option>
+              </select>
+            </label>
+            <label for="VariantDropdown"> <span class="label_text"> Variant (required): </span>
+              <select name="variant" id="VariantDropdown" disabled="">
+                <option value="">Select Gene First</option>
+              </select>
+            </label>
+             <label for="TissueDropdown1"> <span class="label_text"> Tissue (optional): </span>
+              <select name="tissues" id="TissueDropdown1" disabled="">
+                <option value="">Select Gene First</option>
+              </select>
+            </label>
+            <input class="button" type="submit" value="Search">
+          </form>
+        </div>
+        <script src="lib/search.js"></script>
+      </div>
+      <div class="content-search-right">
+        <div class="content-search-sidebox">
+         <h2>Support CancerT KB</h2>
+        </div>
+      </div>
+      <div style="clear:both"></div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="foot">
+      <p>Copyright © 2017 <a href="http://synergylab.info">SynergyLab</a> | All Rights Reserved</p>
+      <p style="font-size:12px;">CancerT is intended for research purposes only. Its information cannot be copied or redistributed. Please review the <a href="terms.php">usage terms</a> before continuing.</p>
+    </div>
+  </div>
+</div>
+</body>
+</html>

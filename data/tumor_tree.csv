@@ -1,0 +1,578 @@
+primary,secondary,tertiary,quaternary,quinternary,num
+Adrenal Gland (ADRENAL_GLAND),Adrenocortical Adenoma (ACA),,,,1
+Adrenal Gland (ADRENAL_GLAND),Adrenocortical Carcinoma (ACC),,,,1
+Adrenal Gland (ADRENAL_GLAND),Pheochromocytoma (PHC),,,,1
+Ampulla of Vater (AMPULLA_OF_VATER),Ampullary Carcinoma (AMPCA),,,,1
+Ampulla of Vater (AMPULLA_OF_VATER),Ampullary Carcinoma (AMPCA),Intestinal Ampullary Carcinoma (IAMPCA),,,1
+Ampulla of Vater (AMPULLA_OF_VATER),Ampullary Carcinoma (AMPCA),Mixed Ampullary Carcinoma (MAMPCA),,,1
+Ampulla of Vater (AMPULLA_OF_VATER),Ampullary Carcinoma (AMPCA),Pancreatobiliary Ampullary Carcinoma (PAMPCA),,,1
+Biliary Tract (BILIARY_TRACT),Cholangiocarcinoma (CHOL),,,,1
+Biliary Tract (BILIARY_TRACT),Cholangiocarcinoma (CHOL),Extrahepatic Cholangiocarcinoma (EHCH),,,1
+Biliary Tract (BILIARY_TRACT),Cholangiocarcinoma (CHOL),Intrahepatic Cholangiocarcinoma (IHCH),,,1
+Biliary Tract (BILIARY_TRACT),Cholangiocarcinoma (CHOL),Perihilar Cholangiocarcinoma (PHCH),,,1
+Biliary Tract (BILIARY_TRACT),Gallbladder Cancer (GBC),,,,1
+Bladder/Urinary Tract (BLADDER),Bladder Squamous Cell Carcinoma (BLSC),,,,1
+Bladder/Urinary Tract (BLADDER),Bladder Adenocarcinoma (BLAD),,,,1
+Bladder/Urinary Tract (BLADDER),Bladder Urothelial Carcinoma (BLCA),,,,1
+Bladder/Urinary Tract (BLADDER),Inflammatory Myofibroblastic Bladder Tumor (IMTB),,,,1
+Bladder/Urinary Tract (BLADDER),Mucosal Melanoma of the Urethra (URMM),,,,1
+Bladder/Urinary Tract (BLADDER),Plasmacytoid/Signet Ring Cell Bladder Carcinoma (SRCBC),,,,1
+Bladder/Urinary Tract (BLADDER),Sarcomatoid Carcinoma of the Urinary Bladder (SCB),,,,1
+Bladder/Urinary Tract (BLADDER),Small Cell Bladder Cancer (SCBC),,,,1
+Bladder/Urinary Tract (BLADDER),Upper Tract Urothelial Carcinoma (UTUC),,,,1
+Bladder/Urinary Tract (BLADDER),Urachal Carcinoma (URCA),,,,1
+Bladder/Urinary Tract (BLADDER),Urachal Carcinoma (URCA),Urachal Adenocarcinoma (UA),,,1
+Bladder/Urinary Tract (BLADDER),Urethral Cancer (UCA),,,,1
+Bladder/Urinary Tract (BLADDER),Urethral Cancer (UCA),Urethral Adenocarcinoma (UAD),,,1
+Bladder/Urinary Tract (BLADDER),Urethral Cancer (UCA),Urethral Squamous Cell Carcinoma (USCC),,,1
+Bladder/Urinary Tract (BLADDER),Urethral Cancer (UCA),Urethral Urothelial Carcinoma (UCU),,,1
+Blood (BLOOD),Blastic Plasmacytoid Dendritic Cell Neoplasm (BPDCN),,,,1
+Blood (BLOOD),Histiocytosis (HIST),,,,1
+Blood (BLOOD),Histiocytosis (HIST),Langerhans Cell Histiocytosis (LCH),,,1
+Blood (BLOOD),Histiocytosis (HIST),Non-Langerhans Cell Histiocytosis/Erdheim-Chester Disease (ECD),,,1
+Blood (BLOOD),Leukemia (LEUK),Acute Lymphoid Leukemia (ALL),,,1
+Blood (BLOOD),Leukemia (LEUK),Acute Lymphoid Leukemia (ALL),B-Cell Acute Lymphoid Leukemia (BALL),,1
+Blood (BLOOD),Leukemia (LEUK),Acute Lymphoid Leukemia (ALL),T-Cell Acute Lymphoid Leukemia (TALL),,1
+Blood (BLOOD),Leukemia (LEUK),Acute Monocytic Leukemia (AMOL),,,1
+Blood (BLOOD),Leukemia (LEUK),Acute Myeloid Leukemia (AML),,,1
+Blood (BLOOD),Leukemia (LEUK),Chronic Lymphocytic Leukemia (CLL),,,1
+Blood (BLOOD),Leukemia (LEUK),Chronic Myelogenous Leukemia (CML),,,1
+Blood (BLOOD),Leukemia (LEUK),Chronic Myelomonocytic Leukemia (CMML),,,1
+Blood (BLOOD),Leukemia (LEUK),Hairy Cell Leukemia (HCL),,,1
+Blood (BLOOD),Leukemia (LEUK),Large Granular Lymphocytic Leukemia (LGLL),,,1
+Blood (BLOOD),Multiple Myeloma (MM),,,,1
+Blood (BLOOD),Myelodysplasia (MDS),,,,1
+Blood (BLOOD),Myeloproliferative Neoplasm (MPN),,,,1
+Blood (BLOOD),Myeloproliferative Neoplasm (MPN),Essential Thrombocythaemia (ETC),,,1
+Blood (BLOOD),Myeloproliferative Neoplasm (MPN),Myelofibrosis/Osteomyelofibrosis (MYF),,,1
+Blood (BLOOD),Myeloproliferative Neoplasm (MPN),Polycythemia Vera  (PCV),,,1
+Blood (BLOOD),Systemic Mastocytosis (SM),,,,1
+Bone (BONE),Chondroblastoma (CHBL),,,,1
+Bone (BONE),Chondrosarcoma (CHS),,,,1
+Bone (BONE),Chondrosarcoma (CHS),Dedifferentiated Chondrosarcoma (DDCHS),,,1
+Bone (BONE),Chondrosarcoma (CHS),Extraskeletal Myxoid Chondrosarcoma (EMCHS),,,1
+Bone (BONE),Chondrosarcoma (CHS),Mesenchymal Chondrosarcoma (MCHS),,,1
+Bone (BONE),Chondrosarcoma (CHS),Myxoid Chondrosarcoma (MYCHS),,,1
+Bone (BONE),Chordoma (CHDM),,,,1
+Bone (BONE),Chordoma (CHDM),Conventional Type Chordoma (CCHDM),,,1
+Bone (BONE),Chordoma (CHDM),Dedifferentiated Chordoma  (DDCHDM),,,1
+Bone (BONE),Ewing Sarcoma (ES),,,,1
+Bone (BONE),Giant Cell Tumor of Bone (GCTB),,,,1
+Bone (BONE),Osteosarcoma (OS),,,,1
+Bone (BONE),Osteosarcoma (OS),Chondroblastic Osteosarcoma (CHOS),,,1
+Bone (BONE),Osteosarcoma (OS),Fibroblastic Osteosarcoma (FIOS),,,1
+Bone (BONE),Osteosarcoma (OS),High-Grade Surface Osteosarcoma (HGSOS),,,1
+Bone (BONE),Osteosarcoma (OS),Low-Grade Central Osteosarcoma (LGCOS),,,1
+Bone (BONE),Osteosarcoma (OS),Osteoblastic Osteosarcoma (OSOS),,,1
+Bone (BONE),Osteosarcoma (OS),Parosteal Osteosarcoma (PAOS),,,1
+Bone (BONE),Osteosarcoma (OS),Periosteal Osteosarcoma (PEOS),,,1
+Bone (BONE),Osteosarcoma (OS),Secondary Osteosarcoma (SECOS),,,1
+Bone (BONE),Osteosarcoma (OS),Small Cell Osteosarcoma (SCOS),,,1
+Bone (BONE),Osteosarcoma (OS),Telangiectatic Osteosarcoma (TEOS),,,1
+Bowel (BOWEL),Anal Squamous Cell Carcinoma (ANSC),,,,1
+Bowel (BOWEL),Anorectal Mucosal Melanoma (ARMM),,,,1
+Bowel (BOWEL),Appendiceal Adenocarcinoma (APAD),,,,1
+Bowel (BOWEL),Appendiceal Adenocarcinoma (APAD),Colonic Type Adenocarcinoma of the Appendix (CTAAP),,,1
+Bowel (BOWEL),Appendiceal Adenocarcinoma (APAD),Goblet Cell Carcinoid of the Appendix (GCCAP),,,1
+Bowel (BOWEL),Appendiceal Adenocarcinoma (APAD),Mucinous Adenocarcinoma of the Appendix (MAAP),,,1
+Bowel (BOWEL),Appendiceal Adenocarcinoma (APAD),Signet Ring Cell Type of the Appendix (SRAP),,,1
+Bowel (BOWEL),Colorectal Adenocarcinoma (COADREAD),,,,1
+Bowel (BOWEL),Colorectal Adenocarcinoma (COADREAD),Colon Adenocarcinoma (COAD),,,1
+Bowel (BOWEL),Colorectal Adenocarcinoma (COADREAD),Mucinous Adenocarcinoma of the Colon and Rectum (MACR),,,1
+Bowel (BOWEL),Colorectal Adenocarcinoma (COADREAD),Rectal Adenocarcinoma (READ),,,1
+Bowel (BOWEL),Colorectal Adenocarcinoma (COADREAD),Signet Ring Cell Adenocarcinoma of the Colon and Rectum (SRCCR),,,1
+Bowel (BOWEL),Gastrointestinal Neuroendocrine Tumors (GINET),,,,1
+Bowel (BOWEL),Gastrointestinal Neuroendocrine Tumors (GINET),High-Grade Neuroendocrine Carcinoma of the Colon and Rectum (HGNEC),,,1
+Bowel (BOWEL),Gastrointestinal Neuroendocrine Tumors (GINET),Small Bowel Well-Differentiated Neuroendocrine Tumor (SBWDNET),,,1
+Bowel (BOWEL),Gastrointestinal Neuroendocrine Tumors (GINET),Well-Differentiated Neuroendocrine Tumor of the Appendix (AWDNET),,,1
+Bowel (BOWEL),Gastrointestinal Neuroendocrine Tumors (GINET),Well-Differentiated Neuroendocrine Tumor of the Rectum (RWDNET),,,1
+Bowel (BOWEL),Medullary Carcinoma of the Colon (CMC),,,,1
+Bowel (BOWEL),Small Bowel Cancer (SBC),,,,1
+Bowel (BOWEL),Small Bowel Cancer (SBC),Duodenal Adenocarcinoma (DA),,,1
+Bowel (BOWEL),Small Intestinal Carcinoma (SIC),,,,1
+CNS/Brain (BRAIN),Choroid Plexus Tumor (CPT),Choroid Plexus Carcinoma (CPC),,,1
+CNS/Brain (BRAIN),Choroid Plexus Tumor (CPT),Choroid Plexus Papilloma (CPP),,,1
+CNS/Brain (BRAIN),Choroid Plexus Tumor (CPT),Atypical Choroid Plexus Papilloma (ACPP),,,1
+CNS/Brain (BRAIN),Diffuse Glioma (DIFG),Astrocytoma (ASTR),,,1
+CNS/Brain (BRAIN),Diffuse Glioma (DIFG),Anaplastic Astrocytoma (AASTR),,,1
+CNS/Brain (BRAIN),Diffuse Glioma (DIFG),Oligodendroglioma (ODG),,,1
+CNS/Brain (BRAIN),Diffuse Glioma (DIFG),Anaplastic Oligodendroglioma (AODG),,,1
+CNS/Brain (BRAIN),Diffuse Glioma (DIFG),Oligoastrocytoma (OAST),,,1
+CNS/Brain (BRAIN),Diffuse Glioma (DIFG),Anaplastic Oligoastrocytoma (AOAST),,,1
+CNS/Brain (BRAIN),Diffuse Glioma (DIFG),Diffuse Intrinsic Pontine Glioma (DIPG),,,1
+CNS/Brain (BRAIN),Diffuse Glioma (DIFG),Glioblastoma (GB),Glioblastoma Multiforme (GBM),,1
+CNS/Brain (BRAIN),Diffuse Glioma (DIFG),Glioblastoma (GB),Gliosarcoma (GSARC),,1
+CNS/Brain (BRAIN),Diffuse Glioma (DIFG),Glioblastoma (GB),Small Cell Glioblastoma (SCGBM),,1
+CNS/Brain (BRAIN),Diffuse Glioma (DIFG),"High-Grade Glioma, NOS (HGGNOS)",,,1
+CNS/Brain (BRAIN),Embryonal Tumor (EMBT),Atypical Teratoid/Rhabdoid Tumor (ATRT),,,1
+CNS/Brain (BRAIN),Embryonal Tumor (EMBT),Desmoplastic/Nodular Medulloblastoma (DMBL),,,1
+CNS/Brain (BRAIN),Embryonal Tumor (EMBT),Embryonal Tumor with Abundant Neuropil and True Rosettes (ETANTR),,,1
+CNS/Brain (BRAIN),Embryonal Tumor (EMBT),Ganglioneuroblastoma (GNBL),,,1
+CNS/Brain (BRAIN),Embryonal Tumor (EMBT),Large Cell/Anaplastic Medulloblastoma (AMBL),,,1
+CNS/Brain (BRAIN),Embryonal Tumor (EMBT),Medulloblastoma (MBL),,,1
+CNS/Brain (BRAIN),Embryonal Tumor (EMBT),Medulloblastoma with Extensive Nodularity (MBEN),,,1
+CNS/Brain (BRAIN),Embryonal Tumor (EMBT),Medulloepithelioma (MDEP),,,1
+CNS/Brain (BRAIN),Embryonal Tumor (EMBT),Medullomyoblastoma (MMB),,,1
+CNS/Brain (BRAIN),Embryonal Tumor (EMBT),Melanotic Medulloblastoma (MMBL),,,1
+CNS/Brain (BRAIN),Embryonal Tumor (EMBT),Neuroblastoma (NBL),,,1
+CNS/Brain (BRAIN),Embryonal Tumor (EMBT),Olfactory Neuroblastoma (ONBL),,,1
+CNS/Brain (BRAIN),Embryonal Tumor (EMBT),Primitive Neuroectodermal Tumor (PNET),,,1
+CNS/Brain (BRAIN),Encapsulated Glioma (ENCG),Pilocytic Astrocytoma (PAST),,,1
+CNS/Brain (BRAIN),Encapsulated Glioma (ENCG),Pilomyxoid Astrocytoma (PMA),,,1
+CNS/Brain (BRAIN),Encapsulated Glioma (ENCG),Pleomorphic Xanthoastrocytoma (PXA),,,1
+CNS/Brain (BRAIN),Encapsulated Glioma (ENCG),Dysembryoplastic Neuroepithelial Tumor (DNT),,,1
+CNS/Brain (BRAIN),Encapsulated Glioma (ENCG),Gangliocytoma (GNC),,,1
+CNS/Brain (BRAIN),Encapsulated Glioma (ENCG),Ganglioglioma (GNG),,,1
+CNS/Brain (BRAIN),Encapsulated Glioma (ENCG),Anaplastic Ganglioglioma (AGNG),,,1
+CNS/Brain (BRAIN),Encapsulated Glioma (ENCG),"Low-Grade Glioma, NOS (LGGNOS)",,,1
+CNS/Brain (BRAIN),Ependymomal Tumor (EPMT),Ependymoma (EPM),,,1
+CNS/Brain (BRAIN),Ependymomal Tumor (EPMT),Anaplastic Ependymoma (APE),,,1
+CNS/Brain (BRAIN),Ependymomal Tumor (EPMT),Clear Cell Ependymoma (CCE),,,1
+CNS/Brain (BRAIN),Ependymomal Tumor (EPMT),Myxopapillary Ependymoma (MPE),,,1
+CNS/Brain (BRAIN),Ependymomal Tumor (EPMT),Subependymoma (SUBE),,,1
+CNS/Brain (BRAIN),"Germ Cell Tumor, Brain (BGCT)",Choriocarcinoma (BCCA),,,1
+CNS/Brain (BRAIN),"Germ Cell Tumor, Brain (BGCT)",Embryonal Carcinoma (BEC),,,1
+CNS/Brain (BRAIN),"Germ Cell Tumor, Brain (BGCT)",Germinoma (GMN),,,1
+CNS/Brain (BRAIN),"Germ Cell Tumor, Brain (BGCT)",Immature Teratoma (BIMT),,,1
+CNS/Brain (BRAIN),"Germ Cell Tumor, Brain (BGCT)",Malignant Teratoma (BMGT),,,1
+CNS/Brain (BRAIN),"Germ Cell Tumor, Brain (BGCT)",Mature Teratoma (BMT),,,1
+CNS/Brain (BRAIN),"Germ Cell Tumor, Brain (BGCT)",Mixed Germ Cell Tumor (BMGCT),,,1
+CNS/Brain (BRAIN),"Germ Cell Tumor, Brain (BGCT)",Yolk Sac Tumor (BYST),,,1
+CNS/Brain (BRAIN),Meningothelial Tumor (MNGT),Meningioma (MNG),,,1
+CNS/Brain (BRAIN),Meningothelial Tumor (MNGT),Anaplastic Meningioma (ANM),,,1
+CNS/Brain (BRAIN),Meningothelial Tumor (MNGT),Atypical Meningioma (ATM),,,1
+CNS/Brain (BRAIN),Meningothelial Tumor (MNGT),Chordoid Meningioma (CHOM),,,1
+CNS/Brain (BRAIN),Meningothelial Tumor (MNGT),Clear cell Meningioma (CCM),,,1
+CNS/Brain (BRAIN),Meningothelial Tumor (MNGT),Hemangiopericytoma of the Central Nervous System (HPCCNS),,,1
+CNS/Brain (BRAIN),Meningothelial Tumor (MNGT),Papillary Meningioma (PPM),,,1
+CNS/Brain (BRAIN),Meningothelial Tumor (MNGT),Rhabdoid Meningioma (RHM),,,1
+CNS/Brain (BRAIN),Meningothelial Tumor (MNGT),Solitary Fibrous Tumor of the Central Nervous System (SFTCNS),,,1
+CNS/Brain (BRAIN),Miscellaneous Brain Tumor (MBT),Hemangioblastoma (HMBL),,,1
+CNS/Brain (BRAIN),Miscellaneous Brain Tumor (MBT),Malignant Lymphoma (MLYM),,,1
+CNS/Brain (BRAIN),Miscellaneous Brain Tumor (MBT),Malignant Tumor (MT),,,1
+CNS/Brain (BRAIN),Miscellaneous Brain Tumor (MBT),Mesenchymal Chondrosarcoma of the CNS (MCHSCNS),,,1
+CNS/Brain (BRAIN),Miscellaneous Brain Tumor (MBT),Primary Brain Tumor (PBT),,,1
+CNS/Brain (BRAIN),Miscellaneous Brain Tumor (MBT),Primary Neuroepithelial Tumor (PRNET),,,1
+CNS/Brain (BRAIN),Miscellaneous Brain Tumor (MBT),High-Grade Neuroepithelial Tumor (HGNET),,,1
+CNS/Brain (BRAIN),Miscellaneous Brain Tumor (MBT),Low-Grade Neuroepithelial Tumor (LGNET),,,1
+CNS/Brain (BRAIN),Miscellaneous Neuroepithelial Tumor (MNET),Angiocentric Glioma (ANGL),,,1
+CNS/Brain (BRAIN),Miscellaneous Neuroepithelial Tumor (MNET),Astroblastoma (ASTB),,,1
+CNS/Brain (BRAIN),Miscellaneous Neuroepithelial Tumor (MNET),Cerebellar Liponeurocytoma (CLNC),,,1
+CNS/Brain (BRAIN),Miscellaneous Neuroepithelial Tumor (MNET),Chordoid Glioma of the Third Ventricle (CHGL),,,1
+CNS/Brain (BRAIN),Miscellaneous Neuroepithelial Tumor (MNET),Central Neurocytoma (CNC),,,1
+CNS/Brain (BRAIN),Miscellaneous Neuroepithelial Tumor (MNET),Desmoplastic Infantile Astrocytoma (DIA),,,1
+CNS/Brain (BRAIN),Miscellaneous Neuroepithelial Tumor (MNET),Desmoplastic Infantile Ganglioglioma (DIG),,,1
+CNS/Brain (BRAIN),Miscellaneous Neuroepithelial Tumor (MNET),Dysplastic Gangliocytoma of the Cerebellum/Lhermitte-Duclos Disease (LDD),,,1
+CNS/Brain (BRAIN),Miscellaneous Neuroepithelial Tumor (MNET),Extraventricular Neurocytoma (EVN),,,1
+CNS/Brain (BRAIN),Miscellaneous Neuroepithelial Tumor (MNET),Papillary Glioneuronal Tumor (PGNT),,,1
+CNS/Brain (BRAIN),Miscellaneous Neuroepithelial Tumor (MNET),Paraganglioma (PGNG),,,1
+CNS/Brain (BRAIN),Miscellaneous Neuroepithelial Tumor (MNET),Rosette-forming Glioneuronal Tumor of the Fourth Ventricle (RGNT),,,1
+CNS/Brain (BRAIN),Pineal Tumor (PINT),Papillary Tumor of the Pineal Region (PTPR),,,1
+CNS/Brain (BRAIN),Pineal Tumor (PINT),Pineal Parenchymal Tumor of Intermediate Differentiation (PPTID),,,1
+CNS/Brain (BRAIN),Pineal Tumor (PINT),Pineocytoma (PINC),,,1
+CNS/Brain (BRAIN),Pineal Tumor (PINT),Pineoblastoma (PBL),,,1
+CNS/Brain (BRAIN),Sellar Tumor (SELT),"Craniopharyngioma, Adamantinomatous Type (ACPG)",,,1
+CNS/Brain (BRAIN),Sellar Tumor (SELT),"Craniopharyngioma, Papillary Type (PCGP)",,,1
+CNS/Brain (BRAIN),Sellar Tumor (SELT),Granular Cell Tumor (GCT),,,1
+CNS/Brain (BRAIN),Sellar Tumor (SELT),Pituicytoma (PTCY),,,1
+CNS/Brain (BRAIN),Sellar Tumor (SELT),Pituitary Adenoma (PTAD),,,1
+CNS/Brain (BRAIN),Sellar Tumor (SELT),Atypical Pituitary Adenoma (APTAD),,,1
+CNS/Brain (BRAIN),Sellar Tumor (SELT),Pituitary Carcinoma (PTCA),,,1
+CNS/Brain (BRAIN),Sellar Tumor (SELT),Spindle Cell Oncocytoma of the Adenohypophysis (SCOAH),,,1
+Breast (BREAST),Adenomyoepithelioma of the Breast (BRAME),,,,1
+Breast (BREAST),Breast Ductal Carcinoma In Situ (DCIS),,,,1
+Breast (BREAST),Breast Ductal Carcinoma In Situ (DCIS),Paget Disease of the Nipple (PD),,,1
+Breast (BREAST),Invasive Breast Carcinoma (BRCA),,,,1
+Breast (BREAST),Invasive Breast Carcinoma (BRCA),Adenoid Cystic Breast Cancer (ACBC),,,1
+Breast (BREAST),Invasive Breast Carcinoma (BRCA),Breast Carcinoma with Signet Ring (BRSRCC),,,1
+Breast (BREAST),Invasive Breast Carcinoma (BRCA),"Breast Invasive Cancer, NOS (BRCANOS)",,,1
+Breast (BREAST),Invasive Breast Carcinoma (BRCA),"Breast Invasive Carcinosarcoma, NOS (CSNOS)",,,1
+Breast (BREAST),Invasive Breast Carcinoma (BRCA),Breast Invasive Ductal Carcinoma (IDC),,,1
+Breast (BREAST),Invasive Breast Carcinoma (BRCA),Breast Invasive Lobular Carcinoma (ILC),,,1
+Breast (BREAST),Invasive Breast Carcinoma (BRCA),Breast Mixed Ductal and Lobular Carcinoma (MDLC),,,1
+Breast (BREAST),Invasive Breast Carcinoma (BRCA),Breast Invasive Mixed Mucinous Carcinoma (IMMC),,,1
+Breast (BREAST),Invasive Breast Carcinoma (BRCA),Solid Papillary Carcinoma of the Breast (SPC),,,1
+Breast (BREAST),Inflammatory Breast Cancer (IBC),,,,1
+Breast (BREAST),Breast Lobular Carcinoma In Situ (LCIS),,,,1
+Breast (BREAST),Metaplastic Breast Cancer (MBC),,,,1
+Breast (BREAST),Metaplastic Breast Cancer (MBC),Epithelial Type Metaplastic Breast Cancer (EMBC),,,1
+Breast (BREAST),Metaplastic Breast Cancer (MBC),Epithelial Type Metaplastic Breast Cancer (EMBC),Metaplastic Adenocarcinoma with Spindle Cell Differentiation (MASCC),,1
+Breast (BREAST),Metaplastic Breast Cancer (MBC),Epithelial Type Metaplastic Breast Cancer (EMBC),Metaplastic Adenosquamous Carcinoma (MASC),,1
+Breast (BREAST),Metaplastic Breast Cancer (MBC),Epithelial Type Metaplastic Breast Cancer (EMBC),Metaplastic Squamous Cell Carcinoma (MSCC),,1
+Breast (BREAST),Metaplastic Breast Cancer (MBC),Mixed Type Metaplastic Breast Cancer (MMBC),,,1
+Breast (BREAST),Metaplastic Breast Cancer (MBC),Mixed Type Metaplastic Breast Cancer (MMBC),Carcinoma with Chondroid Metaplasia (CCHM),,1
+Breast (BREAST),Metaplastic Breast Cancer (MBC),Mixed Type Metaplastic Breast Cancer (MMBC),Carcinoma with Osseous Metaplasia (COM),,1
+Breast (BREAST),Metaplastic Breast Cancer (MBC),Mixed Type Metaplastic Breast Cancer (MMBC),Metaplastic Carcinosarcoma (MCS),,1
+Breast (BREAST),Breast Sarcoma (PBS),,,,1
+Breast (BREAST),Breast Sarcoma (PBS),Breast Angiosarcoma (BA),,,1
+Breast (BREAST),Breast Sarcoma (PBS),Phyllodes Tumor of the Breast (PT),,,1
+Breast (BREAST),Breast Sarcoma (PBS),Phyllodes Tumor of the Breast (PT),Benign Phyllodes Tumor of the Breast (BPT),,1
+Breast (BREAST),Breast Sarcoma (PBS),Phyllodes Tumor of the Breast (PT),Borderline Phyllodes Tumor of the Breast (BLPT),,1
+Breast (BREAST),Breast Sarcoma (PBS),Phyllodes Tumor of the Breast (PT),Malignant Phyllodes Tumor of the Breast (MPT),,1
+Peripheral Nervous System (PNS),Nerve Sheath Tumor (NST),Malignant Peripheral Nerve Sheath Tumor (MPNST),,,1
+Peripheral Nervous System (PNS),Nerve Sheath Tumor (NST),Neurofibroma (NFIB),,,1
+Peripheral Nervous System (PNS),Nerve Sheath Tumor (NST),Schwannoma (SCHW),,,1
+Peripheral Nervous System (PNS),Nerve Sheath Tumor (NST),Schwannoma (SCHW),Cellular Schwannoma (CSCHW),,1
+Peripheral Nervous System (PNS),Nerve Sheath Tumor (NST),Schwannoma (SCHW),Melanotic Schwannoma (MSCHW),,1
+Cervix (CERVIX),Cervical Adenoid Basal Carcinoma (CABC),,,,1
+Cervix (CERVIX),Cervical Adenoid Cystic Carcinoma (CACC),,,,1
+Cervix (CERVIX),Cervical Adenocarcinoma (CEAD),,,,1
+Cervix (CERVIX),Cervical Adenocarcinoma (CEAD),Cervical Clear Cell Carcinoma (CECC),,,1
+Cervix (CERVIX),Cervical Adenocarcinoma (CEAD),Cervical Serous Carcinoma (CESE),,,1
+Cervix (CERVIX),Cervical Adenocarcinoma (CEAD),Endometrioid Carcinoma (CEEN),,,1
+Cervix (CERVIX),Cervical Adenocarcinoma (CEAD),Endocervical Adenocarcinoma (ECAD),,,1
+Cervix (CERVIX),Cervical Adenocarcinoma (CEAD),Mesonephric Carcinoma (CEMN),,,1
+Cervix (CERVIX),Cervical Adenocarcinoma (CEAD),Mucinous Carcinoma (CEMU),,,1
+Cervix (CERVIX),Cervical Adenocarcinoma (CEAD),Mucinous Carcinoma (CEMU),Gastric Type Mucinous Carcinoma (GCEMU),,1
+Cervix (CERVIX),Cervical Adenocarcinoma (CEAD),Mucinous Carcinoma (CEMU),Intestinal Type Mucinous Carcinoma (ICEMU),,1
+Cervix (CERVIX),Cervical Adenocarcinoma (CEAD),Mucinous Carcinoma (CEMU),Signet Ring Mucinous Carcinoma (SCEMU),,1
+Cervix (CERVIX),Cervical Adenocarcinoma (CEAD),Villoglandular Carcinoma (CEVG),,,1
+Cervix (CERVIX),Cervical Adenosquamous Carcinoma (CEAS),,,,1
+Cervix (CERVIX),Cervical Leiomyosarcoma (CELI),,,,1
+Cervix (CERVIX),Cervical Neuroendocrine Tumor (CENE),,,,1
+Cervix (CERVIX),Cervical Rhabdomyosarcoma (CERMS),,,,1
+Cervix (CERVIX),Cervical Squamous Cell Carcinoma (CESC),,,,1
+Cervix (CERVIX),Glassy Cell Carcinoma of the Cervix (CEGCC),,,,1
+Cervix (CERVIX),Small Cell Carcinoma of the Cervix (SCCE),,,,1
+Cervix (CERVIX),Villoglandular Adenocarcinoma of the Cervix (VGCE),,,,1
+Esophagus/Stomach (STOMACH),Esophagogastric Adenocarcinoma (EGC),,,,1
+Esophagus/Stomach (STOMACH),Esophagogastric Adenocarcinoma (EGC),Adenocarcinoma of the Gastroesophageal Junction (GEJ),,,1
+Esophagus/Stomach (STOMACH),Esophagogastric Adenocarcinoma (EGC),Adenosquamous Carcinoma of the Stomach (STAS),,,1
+Esophagus/Stomach (STOMACH),Esophagogastric Adenocarcinoma (EGC),Esophageal Adenocarcinoma (ESCA),,,1
+Esophagus/Stomach (STOMACH),Esophagogastric Adenocarcinoma (EGC),Gastric Remnant Adenocarcinoma (GRC),,,1
+Esophagus/Stomach (STOMACH),Esophagogastric Adenocarcinoma (EGC),Small Cell Carcinoma of the Stomach (STSC),,,1
+Esophagus/Stomach (STOMACH),Esophagogastric Adenocarcinoma (EGC),Stomach Adenocarcinoma (STAD),,,1
+Esophagus/Stomach (STOMACH),Esophagogastric Adenocarcinoma (EGC),Stomach Adenocarcinoma (STAD),Diffuse Type Stomach Adenocarcinoma (DSTAD),,1
+Esophagus/Stomach (STOMACH),Esophagogastric Adenocarcinoma (EGC),Stomach Adenocarcinoma (STAD),Intestinal Type Stomach Adenocarcinoma (ISTAD),,1
+Esophagus/Stomach (STOMACH),Esophagogastric Adenocarcinoma (EGC),Stomach Adenocarcinoma (STAD),Mucinous Stomach Adenocarcinoma (MSTAD),,1
+Esophagus/Stomach (STOMACH),Esophagogastric Adenocarcinoma (EGC),Stomach Adenocarcinoma (STAD),Papillary Stomach Adenocarcinoma (PSTAD),,1
+Esophagus/Stomach (STOMACH),Esophagogastric Adenocarcinoma (EGC),Stomach Adenocarcinoma (STAD),Tubular Stomach Adenocarcinoma (TSTAD),,1
+Esophagus/Stomach (STOMACH),Esophagogastric Adenocarcinoma (EGC),Undifferentiated Stomach Adenocarcinoma (USTAD),,,1
+Esophagus/Stomach (STOMACH),Esophagogastric Adenocarcinoma (EGC),Undifferentiated Stomach Adenocarcinoma (USTAD),Poorly Differentiated Carcinoma of the Stomach (SPDAC),,1
+Esophagus/Stomach (STOMACH),Esophagogastric Adenocarcinoma (EGC),Undifferentiated Stomach Adenocarcinoma (USTAD),Signet Ring Cell Carcinoma of the Stomach (SSRCC),,1
+Esophagus/Stomach (STOMACH),Esophageal Poorly Differentiated Carcinoma (EPDCA),,,,1
+Esophagus/Stomach (STOMACH),Esophageal Squamous Cell Carcinoma (ESCC),,,,1
+Esophagus/Stomach (STOMACH),Mucosal Melanoma of the Esophagus (ESMM),,,,1
+Eye (EYE),Retinoblastoma (RBL),,,,1
+Eye (EYE),Ocular Melanoma (OM),,,,1
+Eye (EYE),Ocular Melanoma (OM),Uveal Melanoma (UM),,,1
+Eye (EYE),Ocular Melanoma (OM),Conjunctival Melanoma (CM),,,1
+Head and Neck (HEAD_NECK),"Head and Neck Carcinoma, Other (OHNCA)",,,,1
+Head and Neck (HEAD_NECK),"Head and Neck Carcinoma, Other (OHNCA)",Epithelial-Myoepithelial Carcinoma (EMYOCA),,,1
+Head and Neck (HEAD_NECK),"Head and Neck Carcinoma, Other (OHNCA)",Head and Neck Neuroendocrine Carcinoma (HNNE),,,1
+Head and Neck (HEAD_NECK),"Head and Neck Carcinoma, Other (OHNCA)",NUT Midline Carcinoma of the Head and Neck (NMCHN),,,1
+Head and Neck (HEAD_NECK),"Head and Neck Carcinoma, Other (OHNCA)",Odontogenic Carcinoma (ODGC),,,1
+Head and Neck (HEAD_NECK),"Head and Neck Carcinoma, Other (OHNCA)",Odontogenic Carcinoma (ODGC),Clear Cell Odontogenic Carcinoma (CCOC),,1
+Head and Neck (HEAD_NECK),"Head and Neck Carcinoma, Other (OHNCA)",Sinonasal Adenocarcinoma (SNA),,,1
+Head and Neck (HEAD_NECK),"Head and Neck Carcinoma, Other (OHNCA)",Sinonasal Undifferentiated Carcinoma (SNUC),,,1
+Head and Neck (HEAD_NECK),Head and Neck Mucosal Melanoma (HNMUCM),,,,1
+Head and Neck (HEAD_NECK),Head and Neck Squamous Cell Carcinoma (HNSC),,,,1
+Head and Neck (HEAD_NECK),Head and Neck Squamous Cell Carcinoma (HNSC),Head and Neck Squamous Cell Carcinoma of Unknown Primary (HNSCUP),,,1
+Head and Neck (HEAD_NECK),Head and Neck Squamous Cell Carcinoma (HNSC),Hypopharynx Squamous Cell Carcinoma (HPHSC),,,1
+Head and Neck (HEAD_NECK),Head and Neck Squamous Cell Carcinoma (HNSC),Oral Cavity Squamous Cell Carcinoma (OCSC),,,1
+Head and Neck (HEAD_NECK),Head and Neck Squamous Cell Carcinoma (HNSC),Oropharynx Squamous Cell Carcinoma (OPHSC),,,1
+Head and Neck (HEAD_NECK),Head and Neck Squamous Cell Carcinoma (HNSC),Larynx Squamous Cell Carcinoma (LXSC),,,1
+Head and Neck (HEAD_NECK),Head and Neck Squamous Cell Carcinoma (HNSC),Sinonasal Squamous Cell Carcinoma (SNSC),,,1
+Head and Neck (HEAD_NECK),Nasopharyngeal Carcinoma (NPC),,,,1
+Head and Neck (HEAD_NECK),Salivary Carcinoma (SACA),,,,1
+Head and Neck (HEAD_NECK),Salivary Carcinoma (SACA),Acinic Cell Carcinoma (ACCC),,,1
+Head and Neck (HEAD_NECK),Salivary Carcinoma (SACA),Adenoid Cystic Carcinoma (ACYC),,,1
+Head and Neck (HEAD_NECK),Salivary Carcinoma (SACA),Mammary Analogue Secretory Carcinoma of Salivary Gland Origin (HNMASC),,,1
+Head and Neck (HEAD_NECK),Salivary Carcinoma (SACA),Mucoepidermoid Carcinoma (MUCC),,,1
+Head and Neck (HEAD_NECK),Salivary Carcinoma (SACA),Myoepithelial Carcinoma (MYEC),,,1
+Head and Neck (HEAD_NECK),Salivary Carcinoma (SACA),Salivary Adenocarcinoma (SAAD),,,1
+Head and Neck (HEAD_NECK),Salivary Carcinoma (SACA),"Salivary Carcinoma, Other (OSACA)",,,1
+Head and Neck (HEAD_NECK),Salivary Carcinoma (SACA),Salivary Duct Carcinoma (SDCA),,,1
+Kidney (KIDNEY),Renal Cell Carcinoma (RCC),Renal Clear Cell Carcinoma (CCRCC),,,1
+Kidney (KIDNEY),Renal Cell Carcinoma (RCC),Renal Clear Cell Carcinoma (CCRCC),Renal Clear Cell Carcinoma with Sarcomatoid Features (SCCRCC),,1
+Kidney (KIDNEY),Renal Cell Carcinoma (RCC),Renal Non-Clear Cell Carcinoma (NCCRCC),,,1
+Kidney (KIDNEY),Renal Cell Carcinoma (RCC),Renal Non-Clear Cell Carcinoma (NCCRCC),Chromophobe Renal Cell Carcinoma (CHRCC),,1
+Kidney (KIDNEY),Renal Cell Carcinoma (RCC),Renal Non-Clear Cell Carcinoma (NCCRCC),Clear Cell Papillary Renal Cell Carcinoma (CCPRC),,1
+Kidney (KIDNEY),Renal Cell Carcinoma (RCC),Renal Non-Clear Cell Carcinoma (NCCRCC),Collecting Duct Renal Cell Carcinoma (CDRCC),,1
+Kidney (KIDNEY),Renal Cell Carcinoma (RCC),Renal Non-Clear Cell Carcinoma (NCCRCC),Papillary Renal Cell Carcinoma (PRCC),,1
+Kidney (KIDNEY),Renal Cell Carcinoma (RCC),Renal Non-Clear Cell Carcinoma (NCCRCC),Renal Angiomyolipoma (RAML),,1
+Kidney (KIDNEY),Renal Cell Carcinoma (RCC),Renal Non-Clear Cell Carcinoma (NCCRCC),Renal Medullary Carcinoma (MRC),,1
+Kidney (KIDNEY),Renal Cell Carcinoma (RCC),Renal Non-Clear Cell Carcinoma (NCCRCC),Renal Mucinous Tubular Spindle Cell Carcinoma (MTSCC),,1
+Kidney (KIDNEY),Renal Cell Carcinoma (RCC),Renal Non-Clear Cell Carcinoma (NCCRCC),Renal Oncocytoma (ROCY),,1
+Kidney (KIDNEY),Renal Cell Carcinoma (RCC),Renal Non-Clear Cell Carcinoma (NCCRCC),Renal Small Cell Carcinoma (RSCC),,1
+Kidney (KIDNEY),Renal Cell Carcinoma (RCC),Renal Non-Clear Cell Carcinoma (NCCRCC),Sarcomatoid Renal Cell Carcinoma (SRCC),,1
+Kidney (KIDNEY),Renal Cell Carcinoma (RCC),Renal Non-Clear Cell Carcinoma (NCCRCC),Unclassified Renal Cell Carcinoma (URCC),,1
+Kidney (KIDNEY),Renal Cell Carcinoma (RCC),Renal Non-Clear Cell Carcinoma (NCCRCC),Translocation-Associated Renal Cell Carcinoma (TRCC),,1
+Kidney (KIDNEY),Wilms' Tumor (WT),,,,1
+Kidney (KIDNEY),Wilms' Tumor (WT),Rhabdoid Cancer (MRT),,,1
+Liver (LIVER),Fibrolamellar Carcinoma (FLC),,,,1
+Liver (LIVER),Hepatoblastoma (LIHB),,,,1
+Liver (LIVER),Hepatocellular Adenoma (LIAD),,,,1
+Liver (LIVER),Hepatocellular Carcinoma (HCC),,,,1
+Liver (LIVER),Hepatocellular Carcinoma plus Intrahepatic Cholangiocarcinoma (HCCIHCH),,,,1
+Liver (LIVER),Liver Angiosarcoma (LIAS),,,,1
+Liver (LIVER),Malignant Nonepithelial Tumor of the Liver (LIMNET),,,,1
+Lymph (LYMPH),Hodgkin Lymphoma (HL),,,,1
+Lymph (LYMPH),Hodgkin Lymphoma (HL),Classical Hodgkin Lymphoma (CHL),,,1
+Lymph (LYMPH),Hodgkin Lymphoma (HL),Nodular Lymphocyte-Predominant Hodgkin Lymphoma (NLPHL),,,1
+Lymph (LYMPH),Non-Hodgkin Lymphoma (NHL),,,,1
+Lymph (LYMPH),Non-Hodgkin Lymphoma (NHL),B-Cell Lymphoma (BCL),,,1
+Lymph (LYMPH),Non-Hodgkin Lymphoma (NHL),B-Cell Lymphoma (BCL),Burkitt Lymphoma (BL),,1
+Lymph (LYMPH),Non-Hodgkin Lymphoma (NHL),B-Cell Lymphoma (BCL),Diffuse Large B-Cell Lymphoma (DLBCL),,1
+Lymph (LYMPH),Non-Hodgkin Lymphoma (NHL),B-Cell Lymphoma (BCL),Extranodal Marginal Zone Lymphoma (MALTL),,1
+Lymph (LYMPH),Non-Hodgkin Lymphoma (NHL),B-Cell Lymphoma (BCL),Follicular Lymphoma (FL),,1
+Lymph (LYMPH),Non-Hodgkin Lymphoma (NHL),B-Cell Lymphoma (BCL),Mantle Cell Lymphoma (MCL),,1
+Lymph (LYMPH),Non-Hodgkin Lymphoma (NHL),B-Cell Lymphoma (BCL),Marginal Zone Lymphoma (MZL),,1
+Lymph (LYMPH),Non-Hodgkin Lymphoma (NHL),B-Cell Lymphoma (BCL),Mediastinal Large B-Cell Lymphoma (MBCL),,1
+Lymph (LYMPH),Non-Hodgkin Lymphoma (NHL),B-Cell Lymphoma (BCL),Nodal Marginal Zone Lymphoma (NMZL),,1
+Lymph (LYMPH),Non-Hodgkin Lymphoma (NHL),B-Cell Lymphoma (BCL),Primary CNS Lymphoma (PCNSL),,1
+Lymph (LYMPH),Non-Hodgkin Lymphoma (NHL),B-Cell Lymphoma (BCL),Primary Effusion Lymphoma (PEL),,1
+Lymph (LYMPH),Non-Hodgkin Lymphoma (NHL),B-Cell Lymphoma (BCL),Small Lymphocytic Lymphoma (SLL),,1
+Lymph (LYMPH),Non-Hodgkin Lymphoma (NHL),B-Cell Lymphoma (BCL),Splenic Marginal Zone Lymphoma (SMZL),,1
+Lymph (LYMPH),Non-Hodgkin Lymphoma (NHL),B-Cell Lymphoma (BCL),Waldenstrom Macroglobulinemia (WM),,1
+Lymph (LYMPH),Non-Hodgkin Lymphoma (NHL),T-Cell and Natural Killer Lymphoma (TNKL),,,1
+Lymph (LYMPH),Non-Hodgkin Lymphoma (NHL),T-Cell and Natural Killer Lymphoma (TNKL),Cutaneous T-Cell Lymphoma (CTCL),,1
+Lymph (LYMPH),Non-Hodgkin Lymphoma (NHL),T-Cell and Natural Killer Lymphoma (TNKL),Cutaneous T-Cell Lymphoma (CTCL),Mycosis Fungoides (MYCF),1
+Lymph (LYMPH),Non-Hodgkin Lymphoma (NHL),T-Cell and Natural Killer Lymphoma (TNKL),Cutaneous T-Cell Lymphoma (CTCL),Sezary Syndrome (SEZS),1
+Lymph (LYMPH),Non-Hodgkin Lymphoma (NHL),T-Cell and Natural Killer Lymphoma (TNKL),Peripheral T-Cell Lymphoma (PTCL),,1
+Lymph (LYMPH),Non-Hodgkin Lymphoma (NHL),T-Cell and Natural Killer Lymphoma (TNKL),Peripheral T-Cell Lymphoma (PTCL),Anaplastic Large Cell Lymphoma (ALCL),1
+Lymph (LYMPH),Non-Hodgkin Lymphoma (NHL),T-Cell and Natural Killer Lymphoma (TNKL),Peripheral T-Cell Lymphoma (PTCL),Angioimmunoblastic T-Cell Lymphoma (AITL),1
+Lymph (LYMPH),Non-Hodgkin Lymphoma (NHL),T-Cell and Natural Killer Lymphoma (TNKL),Peripheral T-Cell Lymphoma (PTCL),"Peripheral T-Cell Lymphoma, NOS (PTCLNOS)",1
+Lymph (LYMPH),Rosai-Dorfman Disease (RD),,,,1
+Lung (LUNG),Combined Small Cell Lung Carcinoma (CSCLC),,,,1
+Lung (LUNG),Inflammatory Myofibroblastic Lung Tumor (IMTL),,,,1
+Lung (LUNG),Lung Neuroendocrine Tumor (LNET),,,,1
+Lung (LUNG),Lung Neuroendocrine Tumor (LNET),Atypical Lung Carcinoid (ALUCA),,,1
+Lung (LUNG),Lung Neuroendocrine Tumor (LNET),Large Cell Neuroendocrine Carcinoma (LUNE),,,1
+Lung (LUNG),Lung Neuroendocrine Tumor (LNET),Lung Carcinoid (LUCA),,,1
+Lung (LUNG),Lung Neuroendocrine Tumor (LNET),Small Cell Lung Cancer (SCLC),,,1
+Lung (LUNG),Non-Small Cell Lung Cancer (NSCLC),,,,1
+Lung (LUNG),Non-Small Cell Lung Cancer (NSCLC),Large Cell Lung Carcinoma (LCLC),,,1
+Lung (LUNG),Non-Small Cell Lung Cancer (NSCLC),Large Cell Lung Carcinoma (LCLC),Basaloid Large Cell Carcinoma of the Lung (BLCLC),,1
+Lung (LUNG),Non-Small Cell Lung Cancer (NSCLC),Large Cell Lung Carcinoma (LCLC),Clear Cell Carcinoma of the Lung (CCLC),,1
+Lung (LUNG),Non-Small Cell Lung Cancer (NSCLC),Large Cell Lung Carcinoma (LCLC),Giant Cell Carcinoma of the Lung (GCLC),,1
+Lung (LUNG),Non-Small Cell Lung Cancer (NSCLC),Large Cell Lung Carcinoma (LCLC),Large Cell Lung Carcinoma With Rhabdoid Phenotype (RLCLC),,1
+Lung (LUNG),Non-Small Cell Lung Cancer (NSCLC),Large Cell Lung Carcinoma (LCLC),Lymphoepithelioma-like Carcinoma of the Lung (LECLC),,1
+Lung (LUNG),Non-Small Cell Lung Cancer (NSCLC),Lung Adenocarcinoma (LUAD),,,1
+Lung (LUNG),Non-Small Cell Lung Cancer (NSCLC),Lung Adenosquamous Carcinoma (LUAS),,,1
+Lung (LUNG),Non-Small Cell Lung Cancer (NSCLC),Lung Squamous Cell Carcinoma (LUSC),,,1
+Lung (LUNG),Non-Small Cell Lung Cancer (NSCLC),Poorly Differentiated Non-Small Cell Lung Cancer (NSCLCPD),,,1
+Lung (LUNG),Non-Small Cell Lung Cancer (NSCLC),Salivary Gland–Type Tumor of the Lung (SGTTL),,,1
+Lung (LUNG),Non-Small Cell Lung Cancer (NSCLC),Salivary Gland–Type Tumor of the Lung (SGTTL),Adenoid Cystic Carcinoma of the Lung (LUACC),,1
+Lung (LUNG),Non-Small Cell Lung Cancer (NSCLC),Salivary Gland–Type Tumor of the Lung (SGTTL),Mucoepidermoid Carcinoma of the Lung (LUMEC),,1
+Lung (LUNG),Non-Small Cell Lung Cancer (NSCLC),Spindle Cell Carcinoma of the Lung (SpCC),,,1
+Lung (LUNG),Pleuropulmonary Blastoma (PPB),,,,1
+Lung (LUNG),Pulmonary Lymphangiomyomatosis (LAM),,,,1
+Lung (LUNG),Sarcomatoid Carcinoma of the Lung (SARCL),,,,1
+Ovary/Fallopian Tube (OVARY),"Ovarian Cancer, Other (OOVC)",,,,1
+Ovary/Fallopian Tube (OVARY),"Ovarian Cancer, Other (OOVC)",High-Grade Neuroendocrine Carcinoma of the Ovary (HGONEC),,,1
+Ovary/Fallopian Tube (OVARY),Ovarian Epithelial Tumor (OVT),,,,1
+Ovary/Fallopian Tube (OVARY),Ovarian Epithelial Tumor (OVT),Brenner Tumor (BTOV),,,1
+Ovary/Fallopian Tube (OVARY),Ovarian Epithelial Tumor (OVT),Brenner Tumor (BTOV),"Brenner Tumor, Malignant (BTMOV)",,1
+Ovary/Fallopian Tube (OVARY),Ovarian Epithelial Tumor (OVT),Brenner Tumor (BTOV),"Brenner Tumor, Borderline (BTBOV)",,1
+Ovary/Fallopian Tube (OVARY),Ovarian Epithelial Tumor (OVT),Brenner Tumor (BTOV),"Brenner Tumor, Benign (BTBEOV)",,1
+Ovary/Fallopian Tube (OVARY),Ovarian Epithelial Tumor (OVT),Clear Cell Ovarian Cancer (CCOV),,,1
+Ovary/Fallopian Tube (OVARY),Ovarian Epithelial Tumor (OVT),Clear Cell Borderline Ovarian Tumor (CCBOV),,,1
+Ovary/Fallopian Tube (OVARY),Ovarian Epithelial Tumor (OVT),Endometrioid Ovarian Cancer (EOV),,,1
+Ovary/Fallopian Tube (OVARY),Ovarian Epithelial Tumor (OVT),Endometrioid Borderlin Ovarian Tumor (EBOV),,,1
+Ovary/Fallopian Tube (OVARY),Ovarian Epithelial Tumor (OVT),Mixed Ovarian Carcinoma (MXOV),,,1
+Ovary/Fallopian Tube (OVARY),Ovarian Epithelial Tumor (OVT),Serous Ovarian Cancer (SOC),,,1
+Ovary/Fallopian Tube (OVARY),Ovarian Epithelial Tumor (OVT),Serous Ovarian Cancer (SOC),High-Grade Serous Ovarian Cancer (HGSOC),,1
+Ovary/Fallopian Tube (OVARY),Ovarian Epithelial Tumor (OVT),Serous Ovarian Cancer (SOC),Low-Grade Serous Ovarian Cancer (LGSOC),,1
+Ovary/Fallopian Tube (OVARY),Ovarian Epithelial Tumor (OVT),Mucinous Ovarian Cancer (MOV),,,1
+Ovary/Fallopian Tube (OVARY),Ovarian Epithelial Tumor (OVT),Mucinous Borderline Ovarian Tumor (MBOV),,,1
+Ovary/Fallopian Tube (OVARY),Ovarian Epithelial Tumor (OVT),Ovarian Carcinosarcoma/Malignant Mixed Mesodermal Tumor (OCS),,,1
+Ovary/Fallopian Tube (OVARY),Ovarian Epithelial Tumor (OVT),Ovarian Seromucinous Adenoma (OSMAD),,,1
+Ovary/Fallopian Tube (OVARY),Ovarian Epithelial Tumor (OVT),Ovarian Seromucinous Borderline Tumor (OSMBT),,,1
+Ovary/Fallopian Tube (OVARY),Ovarian Epithelial Tumor (OVT),Ovarian Seromucinous Carcinoma (OSMCA),,,1
+Ovary/Fallopian Tube (OVARY),Ovarian Epithelial Tumor (OVT),Small Cell Carcinoma of the Ovary (SCCO),,,1
+Ovary/Fallopian Tube (OVARY),Ovarian Epithelial Tumor (OVT),Serous Borderline Ovarian Tumor (SBOV),,,1
+Ovary/Fallopian Tube (OVARY),Ovarian Epithelial Tumor (OVT),"Serous Borderline Ovarian Tumor, Micropapillary (SBMOV)",,,1
+Ovary/Fallopian Tube (OVARY),Ovarian Germ Cell Tumor (OGCT),Dysgerminoma (ODYS),,,1
+Ovary/Fallopian Tube (OVARY),Ovarian Germ Cell Tumor (OGCT),Embryonal Carcinoma (OEC),,,1
+Ovary/Fallopian Tube (OVARY),Ovarian Germ Cell Tumor (OGCT),Immature Teratoma (OIMT),,,1
+Ovary/Fallopian Tube (OVARY),Ovarian Germ Cell Tumor (OGCT),Mature Teratoma (OMT),,,1
+Ovary/Fallopian Tube (OVARY),Ovarian Germ Cell Tumor (OGCT),Mixed Germ Cell Tumor (OMGCT),,,1
+Ovary/Fallopian Tube (OVARY),Ovarian Germ Cell Tumor (OGCT),Polyembryoma (OPE),,,1
+Ovary/Fallopian Tube (OVARY),Ovarian Germ Cell Tumor (OGCT),Yolk Sac Tumor (OYST),,,1
+Ovary/Fallopian Tube (OVARY),Sex Cord Stromal Tumor (SCST),Gonadoblastoma (OGBL),,,1
+Ovary/Fallopian Tube (OVARY),Sex Cord Stromal Tumor (SCST),Granulosa Cell Tumor (GRCT),,,1
+Ovary/Fallopian Tube (OVARY),Sex Cord Stromal Tumor (SCST),Malignant Fibrothecoma (MFT),,,1
+Ovary/Fallopian Tube (OVARY),Sex Cord Stromal Tumor (SCST),Sertoli-Leydig Cell Tumor (SLCT),,,1
+Ovary/Fallopian Tube (OVARY),Sex Cord Stromal Tumor (SCST),"Steroid Cell Tumor, NOS (SCT)",,,1
+Pancreas (PANCREAS),Acinar Cell Carcinoma of the Pancreas (PAAC),,,,1
+Pancreas (PANCREAS),Adenosquamous Carcinoma of the Pancreas (PAASC),,,,1
+Pancreas (PANCREAS),Cystic Tumor of the Pancreas (PACT),,,,1
+Pancreas (PANCREAS),Cystic Tumor of the Pancreas (PACT),Intraductal Papillary Mucinous Neoplasm (IPMN),,,1
+Pancreas (PANCREAS),Cystic Tumor of the Pancreas (PACT),Mucinous Cystic Neoplasm (MCN),,,1
+Pancreas (PANCREAS),Cystic Tumor of the Pancreas (PACT),Serous Cystadenoma of the Pancreas (PSC),,,1
+Pancreas (PANCREAS),Pancreatic Adenocarcinoma (PAAD),,,,1
+Pancreas (PANCREAS),Pancreatic Neuroendocrine Tumor (PANET),,,,1
+Pancreas (PANCREAS),Pancreatoblastoma (PB),,,,1
+Pancreas (PANCREAS),Solid Pseudopapillary Neoplasm of the Pancreas (SPN),,,,1
+Pancreas (PANCREAS),Undifferentiated Carcinoma of the Pancreas (UCP),,,,1
+Penis (PENIS),Penile Squamous Cell Carcinoma (PSCC),,,,1
+Penis (PENIS),Penile Squamous Cell Carcinoma (PSCC),Basaloid Penile Squamous Cell Carcinoma (BPSCC),,,1
+Penis (PENIS),Penile Squamous Cell Carcinoma (PSCC),Verrucous Penile Squamous Cell Carcinoma (VPSCC),,,1
+Penis (PENIS),Penile Squamous Cell Carcinoma (PSCC),Warty Penile Squamous Cell Carcinoma (WPSCC),,,1
+Peritoneum (PERITONEUM),Peritoneal Mesothelioma (PEMESO),,,,1
+Pleura (PLEURA),Pleural Mesothelioma (PLMESO),,,,1
+Pleura (PLEURA),Pleural Mesothelioma (PLMESO),"Pleural Mesothelioma, Biphasic Type (PLBMESO)",,,1
+Pleura (PLEURA),Pleural Mesothelioma (PLMESO),"Pleural Mesothelioma, Epithelioid Type (PLEMESO)",,,1
+Pleura (PLEURA),Pleural Mesothelioma (PLMESO),"Pleural Mesothelioma, Sarcomatoid Type (PLSMESO)",,,1
+Prostate (PROSTATE),Prostate Adenocarcinoma (PRAD),,,,1
+Prostate (PROSTATE),Prostate Neuroendocrine Carcinoma (PRNE),,,,1
+Prostate (PROSTATE),Prostate Small Cell Carcinoma (PRSCC),,,,1
+Prostate (PROSTATE),Prostate Sqamous Cell Carcinoma (PRSC),,,,1
+Skin (SKIN),Aggressive Digital Papillary Adenocarcinoma (ADPA),,,,1
+Skin (SKIN),Atypical Fibroxanthoma (AFX),,,,1
+Skin (SKIN),Basal Cell Carcinoma (BCC),,,,1
+Skin (SKIN),Cutaneous Squamous Cell Carcinoma (CSCC),,,,1
+Skin (SKIN),Dermatofibroma (DF),,,,1
+Skin (SKIN),Dermatofibrosarcoma Protuberans (DFSP),,,,1
+Skin (SKIN),Desmoplastic Trichoepithelioma (DTE),,,,1
+Skin (SKIN),Endocrine Mucin Producing Sweat Gland Carcinoma (EMPSGC),,,,1
+Skin (SKIN),Extramammary Paget Disease (EMPD),,,,1
+Skin (SKIN),Melanoma (MEL),,,,1
+Skin (SKIN),Melanoma (MEL),Acral Melanoma (ACRM),,,1
+Skin (SKIN),Melanoma (MEL),Cutaneous Melanoma (SKCM),,,1
+Skin (SKIN),Melanoma (MEL),Desmoplastic Melanoma (DESM),,,1
+Skin (SKIN),Melanoma (MEL),Genitourinary Mucosal Melanoma (GMUCM),,,1
+Skin (SKIN),Melanoma (MEL),Lentigo Maligna Melanoma (SKLMM),,,1
+Skin (SKIN),Melanoma (MEL),Melanoma of Unknown Primary (MUP),,,1
+Skin (SKIN),Melanoma (MEL),Congenital Nevus (SKCN),,,1
+Skin (SKIN),Merkel Cell Carcinoma (MCC),,,,1
+Skin (SKIN),Microcystic Adnexal Carcinoma (MAC),,,,1
+Skin (SKIN),Poroma/Acrospiroma (PORO),,,,1
+Skin (SKIN),Porocarcinoma/Spiroadenocarcinoma (POCA),,,,1
+Skin (SKIN),Porphyria Cutania Tarda (PCT),,,,1
+Skin (SKIN),Proliferating Pilar Cystic Tumor (PPCT),,,,1
+Skin (SKIN),Sebaceous Carcinoma (SEBA),,,,1
+Skin (SKIN),Skin Adnexal Carcinoma (SKAC),,,,1
+Skin (SKIN),Spiroma/Spiradenoma (SPIR),,,,1
+Skin (SKIN),Sweat Gland Adenocarcinoma (SGAD),,,,1
+Skin (SKIN),Sweat Gland Carcinoma/Apocrine Eccrine Carcinoma (AECA),,,,1
+Soft Tissue (SOFT_TISSUE),Aggressive Angiomyxoma (AA),,,,1
+Soft Tissue (SOFT_TISSUE),Alveolar Soft Part Sarcoma (ASPS),,,,1
+Soft Tissue (SOFT_TISSUE),Angiosarcoma (ANGS),,,,1
+Soft Tissue (SOFT_TISSUE),Clear Cell Sarcoma (CCS),,,,1
+Soft Tissue (SOFT_TISSUE),Dendritic Cell Sarcoma (DCS),,,,1
+Soft Tissue (SOFT_TISSUE),Dendritic Cell Sarcoma (DCS),Follicular Dendritic Cell Sarcoma (FDCS),,,1
+Soft Tissue (SOFT_TISSUE),Dendritic Cell Sarcoma (DCS),Histiocytic Dendritic Cell Sarcoma (HDCS),,,1
+Soft Tissue (SOFT_TISSUE),Dendritic Cell Sarcoma (DCS),Interdigitating Dendritic Cell Sarcoma (IDCS),,,1
+Soft Tissue (SOFT_TISSUE),Desmoid/Aggressive Fibromatosis (DES),,,,1
+Soft Tissue (SOFT_TISSUE),Desmoplastic Small-Round-Cell Tumor (DSRCT),,,,1
+Soft Tissue (SOFT_TISSUE),Epithelioid Hemangioendothelioma (EHAE),,,,1
+Soft Tissue (SOFT_TISSUE),Epithelioid Sarcoma (EPIS),,,,1
+Soft Tissue (SOFT_TISSUE),Epithelioid Sarcoma (EPIS),Proximal-Type Epithelioid Sarcoma (PTES),,,1
+Soft Tissue (SOFT_TISSUE),Fibrosarcoma (FIBS),,,,1
+Soft Tissue (SOFT_TISSUE),Fibrosarcoma (FIBS),Sclerosing Epithelioid Fibrosarcoma (SEF),,,1
+Soft Tissue (SOFT_TISSUE),Gastrointestinal Stromal Tumor (GIST),,,,1
+Soft Tissue (SOFT_TISSUE),Glomangiosarcoma (GS),,,,1
+Soft Tissue (SOFT_TISSUE),Hemangioma (HEMA),,,,1
+Soft Tissue (SOFT_TISSUE),Inflammatory Myofibroblastic Tumor (IMT),,,,1
+Soft Tissue (SOFT_TISSUE),Intimal Sarcoma (INTS),,,,1
+Soft Tissue (SOFT_TISSUE),Leiomyosarcoma (LMS),,,,1
+Soft Tissue (SOFT_TISSUE),Liposarcoma (LIPO),,,,1
+Soft Tissue (SOFT_TISSUE),Liposarcoma (LIPO),Dedifferentiated Liposarcoma (DDLS),,,1
+Soft Tissue (SOFT_TISSUE),Liposarcoma (LIPO),Myxoid/Round-Cell Liposarcoma (MRLS),,,1
+Soft Tissue (SOFT_TISSUE),Liposarcoma (LIPO),Pleomorphic Liposarcoma (PLLS),,,1
+Soft Tissue (SOFT_TISSUE),Liposarcoma (LIPO),Well-Differentiated Liposarcoma (WDLS),,,1
+Soft Tissue (SOFT_TISSUE),Low-Grade Fibromyxoid Sarcoma (LGFMS),,,,1
+Soft Tissue (SOFT_TISSUE),Undifferentiated Pleomorphic Sarcoma/Malignant Fibrous Histiocytoma/High-Grade Spindle Cell Sarcoma (MFH),,,,1
+Soft Tissue (SOFT_TISSUE),Myofibroma (MF),,,,1
+Soft Tissue (SOFT_TISSUE),Myopericytoma (MPC),,,,1
+Soft Tissue (SOFT_TISSUE),Myxofibrosarcoma (MFS),,,,1
+Soft Tissue (SOFT_TISSUE),Myxoma (MYXO),,,,1
+Soft Tissue (SOFT_TISSUE),Myxoma (MYXO),Ossifying Fibromyxoid Tumor (OFMT),,,1
+Soft Tissue (SOFT_TISSUE),Perivascular Epithelioid Cell Tumor (PECOMA),,,,1
+Soft Tissue (SOFT_TISSUE),Pseudomyogenic Hemangioendothelioma (PMHE),,,,1
+Soft Tissue (SOFT_TISSUE),Radiation-Associated Sarcoma (RAS),,,,1
+Soft Tissue (SOFT_TISSUE),Rhabdomyosarcoma (RMS),,,,1
+Soft Tissue (SOFT_TISSUE),Rhabdomyosarcoma (RMS),Alveolar Rhabdomyosarcoma (ARMS),,,1
+Soft Tissue (SOFT_TISSUE),Rhabdomyosarcoma (RMS),Embryonal Rhabdomyosarcoma (ERMS),,,1
+Soft Tissue (SOFT_TISSUE),Rhabdomyosarcoma (RMS),Pleomorphic Rhabdomyosarcoma (PLRMS),,,1
+Soft Tissue (SOFT_TISSUE),Rhabdomyosarcoma (RMS),Spindle Cell Rhabdomyosarcoma (SCRMS),,,1
+Soft Tissue (SOFT_TISSUE),Rhabdomyosarcoma (RMS),Spindle Cell/Sclerosing Rhabdomyosarcoma (SCSRMS),,,1
+Soft Tissue (SOFT_TISSUE),"Round Cell Sarcoma, NOS (RCSNOS)",,,,1
+Soft Tissue (SOFT_TISSUE),"Sarcoma, NOS (SARCNOS)",,,,1
+Soft Tissue (SOFT_TISSUE),Solitary Fibrous Tumor/Hemangiopericytoma (SFT),,,,1
+Soft Tissue (SOFT_TISSUE),Soft Tissue Myoepithelial Carcinoma (STMYEC),,,,1
+Soft Tissue (SOFT_TISSUE),Synovial Sarcoma (SYNS),,,,1
+Soft Tissue (SOFT_TISSUE),Tenosynovial Giant Cell Tumor Diffuse Type (TGCT),,,,1
+Testis (TESTIS),Non-Seminomatous Germ Cell Tumor (NSGCT),,,,1
+Testis (TESTIS),Non-Seminomatous Germ Cell Tumor (NSGCT),Choriocarcinoma (TCCA),,,1
+Testis (TESTIS),Non-Seminomatous Germ Cell Tumor (NSGCT),Embryonal Carcinoma (EMBCA),,,1
+Testis (TESTIS),Non-Seminomatous Germ Cell Tumor (NSGCT),Mixed Germ Cell Tumor (MGCT),,,1
+Testis (TESTIS),Non-Seminomatous Germ Cell Tumor (NSGCT),Teratoma (TT),,,1
+Testis (TESTIS),Non-Seminomatous Germ Cell Tumor (NSGCT),Teratoma with Malignant Transformation (TMT),,,1
+Testis (TESTIS),Non-Seminomatous Germ Cell Tumor (NSGCT),Yolk Sac Tumor (TYST),,,1
+Testis (TESTIS),Seminoma (SEM),,,,1
+Testis (TESTIS),Testicular Lymphoma (TLYM),,,,1
+Testis (TESTIS),Testicular Mesothelioma (TMESO),,,,1
+Thymus (THYMUS),Thymic Epithelial Tumor (TET),,,,1
+Thymus (THYMUS),Thymic Epithelial Tumor (TET),Thymic Carcinoma (THYC),,,1
+Thymus (THYMUS),Thymic Epithelial Tumor (TET),Thymoma (THYM),,,1
+Thymus (THYMUS),Thymic Neuroendocrine Tumor (TNET),,,,1
+Thyroid (THYROID),Anaplastic Thyroid Cancer (THAP),,,,1
+Thyroid (THYROID),Hurthle Cell Thyroid Cancer (THHC),,,,1
+Thyroid (THYROID),Hyalinizing Trabecular Adenoma of the Thyroid (HTAT),,,,1
+Thyroid (THYROID),Medullary Thyroid Cancer (THME),,,,1
+Thyroid (THYROID),Poorly Differentiated Thyroid Cancer (THPD),,,,1
+Thyroid (THYROID),Well-Differentiated Thyroid Cancer (WDTC),,,,1
+Thyroid (THYROID),Well-Differentiated Thyroid Cancer (WDTC),Follicular Thyroid Cancer (THFO),,,1
+Thyroid (THYROID),Well-Differentiated Thyroid Cancer (WDTC),Papillary Thyroid Cancer (THPA),,,1
+Uterus (UTERUS),Gestational Trophoblastic Disease (GTD),,,,1
+Uterus (UTERUS),Gestational Trophoblastic Disease (GTD),Molar Pregnancy (MP),,,1
+Uterus (UTERUS),Gestational Trophoblastic Disease (GTD),Molar Pregnancy (MP),Complete Hydatidiform Mole (CHM),,1
+Uterus (UTERUS),Gestational Trophoblastic Disease (GTD),Molar Pregnancy (MP),Invasive Hydatidiform Mole (IHM),,1
+Uterus (UTERUS),Gestational Trophoblastic Disease (GTD),Molar Pregnancy (MP),Partial Hydatidiform Mole (PHM),,1
+Uterus (UTERUS),Gestational Trophoblastic Disease (GTD),Choriocarcinoma (UCCA),,,1
+Uterus (UTERUS),Gestational Trophoblastic Disease (GTD),Epithelioid Trophoblastic Tumor (ETT),,,1
+Uterus (UTERUS),Gestational Trophoblastic Disease (GTD),Placental Site Trophoblastic Tumor (PSTT),,,1
+Uterus (UTERUS),Endometrial Carcinoma (UCEC),,,,1
+Uterus (UTERUS),Endometrial Carcinoma (UCEC),Poorly Differentiated Carcinoma of the Uterus (UPDC),,,1
+Uterus (UTERUS),Endometrial Carcinoma (UCEC),Uterine Adenosquamous Carcinoma (UASC),,,1
+Uterus (UTERUS),Endometrial Carcinoma (UCEC),Uterine Carcinosarcoma/Uterine Malignant Mixed Mullerian Tumor (UCS),,,1
+Uterus (UTERUS),Endometrial Carcinoma (UCEC),Uterine Clear Cell Carcinoma (UCCC),,,1
+Uterus (UTERUS),Endometrial Carcinoma (UCEC),Uterine Dedifferentiated Carcinoma (UDDC),,,1
+Uterus (UTERUS),Endometrial Carcinoma (UCEC),Uterine Endometrioid Carcinoma (UEC),,,1
+Uterus (UTERUS),Endometrial Carcinoma (UCEC),Uterine Mesonephric Carcinoma (UMNC),,,1
+Uterus (UTERUS),Endometrial Carcinoma (UCEC),Uterine Mixed Endometrial Carcinoma (UMEC),,,1
+Uterus (UTERUS),Endometrial Carcinoma (UCEC),Uterine Mucinous Carcinoma (UMC),,,1
+Uterus (UTERUS),Endometrial Carcinoma (UCEC),Uterine Neuroendocrine Carcinoma (UNEC),,,1
+Uterus (UTERUS),Endometrial Carcinoma (UCEC),Uterine Serous Carcinoma/Uterine Papillary Serous Carcinoma (USC),,,1
+Uterus (UTERUS),Endometrial Carcinoma (UCEC),Uterine Undifferentiated Carcinoma (UUC),,,1
+Uterus (UTERUS),Other Uterine Tumor (OUTT),,,,1
+Uterus (UTERUS),Uterine Sarcoma/Mesenchymal (USARC),Undifferentiated Uterine Sarcoma (UUS),,,1
+Uterus (UTERUS),Uterine Sarcoma/Mesenchymal (USARC),Uterine Adenosarcoma (UAS),,,1
+Uterus (UTERUS),Uterine Sarcoma/Mesenchymal (USARC),Endometrial Stromal Sarcoma (ESS),,,1
+Uterus (UTERUS),Uterine Sarcoma/Mesenchymal (USARC),Endometrial Stromal Sarcoma (ESS),High-Grade Endometrial Stromal Sarcoma (HGESS),,1
+Uterus (UTERUS),Uterine Sarcoma/Mesenchymal (USARC),Endometrial Stromal Sarcoma (ESS),Low-Grade Endometrial Stromal Sarcoma (LGESS),,1
+Uterus (UTERUS),Uterine Sarcoma/Mesenchymal (USARC),Uterine Perivascular Epithelioid Cell Tumor (UPECOMA),,,1
+Uterus (UTERUS),Uterine Sarcoma/Mesenchymal (USARC),"Uterine Sarcoma, Other (OUSARC)",,,1
+Uterus (UTERUS),Uterine Sarcoma/Mesenchymal (USARC),Uterine Smooth Muscle Tumor (USMT),,,1
+Uterus (UTERUS),Uterine Sarcoma/Mesenchymal (USARC),Uterine Smooth Muscle Tumor (USMT),Uterine Leiomyoma (ULM),,1
+Uterus (UTERUS),Uterine Sarcoma/Mesenchymal (USARC),Uterine Smooth Muscle Tumor (USMT),Uterine Leiomyosarcoma (ULMS),,1
+Uterus (UTERUS),Uterine Sarcoma/Mesenchymal (USARC),Uterine Smooth Muscle Tumor (USMT),Uterine Epithelioid Leiomyosarcoma (UELMS),,1
+Uterus (UTERUS),Uterine Sarcoma/Mesenchymal (USARC),Uterine Smooth Muscle Tumor (USMT),Uterine Myxoid Leiomyosarcoma (UMLMS),,1
+Uterus (UTERUS),Uterine Sarcoma/Mesenchymal (USARC),Uterine Smooth Muscle Tumor (USMT),Uterine Smooth Muscle Tumor of Uncertain Malignant Potential (USTUMP),,1
+Vulva/Vagina (VULVA),Germ Cell Tumor of the Vulva (VGCT),,,,1
+Vulva/Vagina (VULVA),Germ Cell Tumor of the Vulva (VGCT),Dysgerminoma (VDYS),,,1
+Vulva/Vagina (VULVA),Germ Cell Tumor of the Vulva (VGCT),Embryonal Carcinoma (VOEC),,,1
+Vulva/Vagina (VULVA),Germ Cell Tumor of the Vulva (VGCT),Immature Teratoma (VIMT),,,1
+Vulva/Vagina (VULVA),Germ Cell Tumor of the Vulva (VGCT),Mature Teratoma (VMT),,,1
+Vulva/Vagina (VULVA),Germ Cell Tumor of the Vulva (VGCT),Mixed Germ Cell Tumor (VMGCT),,,1
+Vulva/Vagina (VULVA),Germ Cell Tumor of the Vulva (VGCT),Polyembryoma (VPE),,,1
+Vulva/Vagina (VULVA),Germ Cell Tumor of the Vulva (VGCT),Yolk Sac Tumor (VYST),,,1
+Vulva/Vagina (VULVA),Mucinous Adenocarcinoma of the Vulva/Vagina (VMA),,,,1
+Vulva/Vagina (VULVA),Mucosal Melanoma of the Vulva/Vagina (VMM),,,,1
+Vulva/Vagina (VULVA),Squamous Cell Carcinoma of the Vulva/Vagina (VSC),,,,1
+Vulva/Vagina (VULVA),Vaginal Adenocarcinoma (VA),,,,1
+Vulva/Vagina (VULVA),Poorly Differentiated Vaginal Carcinoma (VPDC),,,,1
+Other (OTHER),Cancer of Unknown Primary (CUP),,,,1
+Other (OTHER),Cancer of Unknown Primary (CUP),"Acinar Cell Carcinoma, NOS (ACN)",,,1
+Other (OTHER),Cancer of Unknown Primary (CUP),"Adenocarcinoma, NOS (ADNOS)",,,1
+Other (OTHER),Cancer of Unknown Primary (CUP),"Cancer of Unknown Primary, NOS (CUPNOS)",,,1
+Other (OTHER),Cancer of Unknown Primary (CUP),Mixed Cancer Types (MIXED),,,1
+Other (OTHER),Cancer of Unknown Primary (CUP),"Neuroendocrine Carcinoma, NOS (NECNOS)",,,1
+Other (OTHER),Cancer of Unknown Primary (CUP),"Neuroendocrine Tumor, NOS (NETNOS)",,,1
+Other (OTHER),Cancer of Unknown Primary (CUP),"Poorly Differentiated Carcinoma, NOS (PDC)",,,1
+Other (OTHER),Cancer of Unknown Primary (CUP),Small Cell Carcinoma of Unknown Primary (SCUP),,,1
+Other (OTHER),Cancer of Unknown Primary (CUP),"Squamous Cell Carcinoma, NOS (SCCNOS)",,,1
+Other (OTHER),Cancer of Unknown Primary (CUP),Undifferentiated Malignant Neoplasm (UDMN),,,1

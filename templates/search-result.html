@@ -1,0 +1,387 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>{$title}</title>
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/bootstrap-table.css">
+<link rel="stylesheet" href="http://rawgit.com/vitalets/x-editable/master/dist/bootstrap3-editable/css/bootstrap-editable.css">
+<link rel="stylesheet" href="css/stylesheet.css" />
+<link rel="stylesheet" href="css/nav.css" />
+<script src="lib/jquery-1.12.1.min.js"></script>
+<script src="lib/cancerT.js"></script>
+<script src="lib/backbone.js" type="text/javascript"></script>
+<script src="lib/ga.js" type="text/javascript"></script>
+<script src="lib/nav.js" type="text/javascript"></script>
+<script src="lib/bootstrap.min.js"></script>
+<script src="lib/bootstrap-table.js"></script>
+<script src="lib/bootstrap-table-export.js"></script>
+<script src="http://rawgit.com/hhurz/tableExport.jquery.plugin/master/tableExport.js"></script>
+<script src="http://rawgit.com/vitalets/x-editable/master/dist/bootstrap3-editable/js/bootstrap-editable.js"></script>
+</head>
+
+<body>
+<div id="watermark"></div>
+<div>
+  <div class="navbar">
+    <div class="navi">
+      <div class="nav-brand"><a href="#/"><img class="logo-brand" src="img/cancerT.png"></a></div>
+      <div id="nav-ui">
+        <ul>
+          <li><a href="index.php">Home</a></li>
+          <li><a href="contribute.php">Contribute</a></li>
+          <li><a href="cancer_browser.php">Cancer Browser</a></li>
+          <li><a href="gene_browser.php">Gene Browser</a></li>
+          <li><a href="search.php">Search Tool</a></li>
+          <li><a href="data.php">Data Access</a></li>
+          <li><a href="help.php">Help</a></li>
+          <li><a href="news.php">News</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="content"> 
+      
+      <!--############ $searchType == "case" ############--> 
+      {if $searchType == "case"}
+      <h4>Find cases by select <span style="color:rgba(0,0,0,0.5)"><i>Gene Name: {$gene}<a href="http://localhost/CancerT/gene_browser.php?start={$gene[0]}&gene={$gene}" style="font-size:9px;">info</a></i>, <i>Mutation: {$variant}</i>{if isset($tissue)}, <i>Tissue: {$tissue}</i>{/if}</span></h4>
+      <table data-toggle="table" data-height='getHeight()' data-pagination='true' data-page-size=25 data-show-export='true' data-show-columns='true' data-page-list = [50,100] data-smart-display:'true'>
+        <thead>
+          <tr>
+            <th data-sortable='true'>Sample ID</th>
+            <th data-sortable='true'>Cancer Type</th>
+            <th data-sortable='true'>Grade</th>
+            <th data-sortable='true'>Stage</th>
+            <th data-sortable='true'>Cancer Source</th>
+            <th data-sortable='true'>Case Age</th>
+            <th data-sortable='true'>Gender</th>
+            <th data-sortable='true'>Cancer NCI ID</th>
+          </tr>
+        </thead>
+        <tbody>
+        
+        {foreach $sampleinfo as $key=>$val}
+        <tr>
+          <td>{$val.sample_id}</td>
+          <td>{$val.Histology_subtype_1}</td>
+          <td>{$val.grade}</td>
+          <td>{$val.stage}</td>
+          <td>{$val.tumour_source}</td>
+          <td>{$val.age}</td>
+          <td>{$val.gender}</td>
+          <td><a href="https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&code={$val.NCI_code}" target="_blank">{$val.NCI_code}</a></td>
+        </tr>
+        {/foreach}
+          </tbody>
+        
+      </table>
+      {/if} 
+      
+      <!--########### $searchType == "tissue" #############--> 
+      {if $searchType == "tissue"}
+      
+      {if $type == "tissue"}
+      <h4>cancer type in {$tissue}:</h4>
+      <table data-toggle="table" data-height='getHeight()'>
+        <thead>
+          <tr>
+            <th data-sortable='true'>Cancer Name</th>
+            <th data-sortable='true'>Level</th>
+            <th data-sortable='true'>NCI Code</th>
+            <th data-sortable='true'>UMIS Code</th>
+            <th data-sortable='true'>Gene Num.</th>
+          </tr>
+        </thead>
+        <tbody>
+        
+        {foreach $sat as $satk=>$satv}
+        <tr>
+          <td><a href="search.php?searchtype=tissue&tissue={$tissue}&tumor={$satv.cancer}">{$satv.cancer}</a></td>
+          <td>{$satv.level}</td>
+          <td><a href="https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&code={$tcgv.nci}" target="_blank">{$satv.nci}</a></td>
+          <td><a href="https://ncim.nci.nih.gov/ncimbrowser/ConceptReport.jsp?code={$tcgv.umis}" target="_blank">{$satv.umis}</a></td>
+          <td>{$satv.num}</td>
+        </tr>
+        {/foreach}
+          </tbody>
+        
+      </table>
+      <p>​​&#8203;​​&#8203;</p>
+      <h4>Genes of cancer in {$tissue}:</h4>
+      <table data-toggle="table" data-height='getHeight()'>
+        <thead>
+          <tr>
+            <th data-sortable='true'>Symbol</th>
+            <th data-sortable='true'>Name</th>
+            <th>Alias</th>
+            <th data-sortable='true'>EntrezGene ID</th>
+            <th data-sortable='true'>Ensembl ID</th>
+            <th data-sortable='true'>Role in Cancer</th>
+          </tr>
+        </thead>
+        <tbody>
+        
+        {foreach $cg as $key=>$val}
+        <tr>
+          <td><a href="gene_browser.php?start={$val.symbol[0]}&gene={$val.symbol}">{$val.symbol}</a></td>
+          <td>{$val.name}</td>
+          <td>{$val.alias}</td>
+          <td>{$val.entrezgene_id}</td>
+          <td>{$val.ensembl_id}</td>
+          <td>{$val.role}</td>
+        </tr>
+        {/foreach}
+          </tbody>
+        
+      </table>
+      <p>​​&#8203;​​&#8203;</p>
+      <h4>Gene mutations of cancer in {$tissue}:</h4>
+      <table data-toggle="table" data-height='getHeight()'>
+        <thead>
+          <tr>
+            <th>Mutation</th>
+            <th data-sortable='true'>Evidence Type</th>
+            <th data-sortable='true'>Evidence Level</th>
+            <th data-sortable='true'>Significance</th>
+            <th>Support (PMID)</th>
+          </tr>
+        </thead>
+        <tbody>
+        
+        {foreach $cga as $cgak=>$cgav}
+        <tr>
+          <td>{$cgav.element_alteration_detail}</td>
+          <td>{$cgav.element_alteration_cancer_evidence_type}</td>
+          <td>{$level_status['eaci'][strtoupper($cgav.element_alteration_cancer_evidence_level)]}</td>
+          <td>{$cgav.element_alteration_cancer_evidence_clinical_significance}</td>
+          <td>{$cgav.element_alteration_cancer_evidence_support}</td>
+        </tr>
+        {/foreach}
+          </tbody>
+        
+      </table>
+      <p>​​&#8203;​​&#8203;</p>
+      <h4>Gene mutations of cancer treatment in {$tissue}:</h4>
+      <table data-toggle="table" data-height='getHeight()'>
+        <thead>
+          <tr>
+            <th>Mutation</th>
+            <th>Drug Name</th>
+            <th>Drug Family</th>
+            <th data-sortable='true'>Evidence Type</th>
+            <th data-sortable='true'>Evidence Level</th>
+            <th data-sortable='true'>Significance</th>
+            <th>Support (PMID)</th>
+          </tr>
+        </thead>
+        <tbody>
+        
+        {foreach $ctga as $ctgak=>$ctgav}
+        <tr>
+          <td>{$ctgav.element_alteration_detail}</td>
+          <td>{$ctgav.element_alteration_cancer_drugs}</td>
+          <td>{$ctgav.element_alteration_cancer_drug_family}</td>
+          <td>{$level_status['eaci'][strtoupper($ctgav.element_alteration_cancer_drug_evidence_type)]}</td>
+          <td>{$ctgav.element_alteration_cancer_drug_evidence_level}</td>
+          <td>{$ctgav.element_alteration_cancer_drug_evidence_clinical_significance}</td>
+          <td>{$ctgav.element_alteration_cancer_drug_evidence_support}</td>
+        </tr>
+        {/foreach}
+          </tbody>
+        
+      </table>
+      {/if} 
+      
+      <!--########################--> 
+      {if $type == "cancer"}
+      <h4>Genes in {$cancer}</h4>
+      <table data-toggle="table" data-height='getHeight()'>
+        <thead>
+          <tr>
+            <th data-sortable='true'>Symbol</th>
+            <th data-sortable='true'>Name</th>
+            <th>Alias</th>
+            <th data-sortable='true'>EntrezGene ID</th>
+            <th data-sortable='true'>Ensembl ID</th>
+            <th data-sortable='true'>Role in Cancer</th>
+          </tr>
+        </thead>
+        <tbody>
+        
+        {foreach $cg as $key=>$val}
+        <tr>
+          <td><a href="gene_browser.php?start={$val.symbol[0]}&gene={$val.symbol}">{$val.symbol}</a></td>
+          <td>{$val.name}</td>
+          <td>{$val.alias}</td>
+          <td>{$val.entrezgene_id}</td>
+          <td>{$val.ensembl_id}</td>
+          <td>{$val.role}</td>
+        </tr>
+        {/foreach}
+          </tbody>
+        
+      </table>
+      <p>​​&#8203;​​&#8203;</p>
+      <h4>Gene mutations in {$cancer}:</h4>
+      <table data-toggle="table" data-height='getHeight()'>
+        <thead>
+          <tr>
+            <th>Mutation</th>
+            <th data-sortable='true'>Evidence Type</th>
+            <th data-sortable='true'>Evidence Level</th>
+            <th data-sortable='true'>Significance</th>
+            <th>Support (PMID)</th>
+          </tr>
+        </thead>
+        <tbody>
+        
+        {foreach $cga as $cgak=>$cgav}
+        <tr>
+          <td>{$cgav.element_alteration_detail}</td>
+          <td>{$cgav.element_alteration_cancer_evidence_type}</td>
+          <td>{$level_status['eadci'][strtoupper($cgav.element_alteration_cancer_evidence_level)]}</td>
+          <td>{$cgav.element_alteration_cancer_evidence_clinical_significance}</td>
+          <td>{$cgav.element_alteration_cancer_evidence_support}</td>
+        </tr>
+        {/foreach}
+          </tbody>
+        
+      </table>
+      <p>​​&#8203;​​&#8203;</p>
+      <h4>Gene mutations in {$cancer} treatment:</h4>
+      <table data-toggle="table" data-height='getHeight()'>
+        <thead>
+          <tr>
+            <th>Mutation</th>
+            <th>Drug Name</th>
+            <th>Drug Family</th>
+            <th data-sortable='true'>Evidence Type</th>
+            <th data-sortable='true'>Evidence Level</th>
+            <th data-sortable='true'>Significance</th>
+            <th>Support (PMID)</th>
+          </tr>
+        </thead>
+        <tbody>
+        
+        {foreach $ctga as $ctgak=>$ctgav}
+        <tr>
+          <td>{$ctgav.element_alteration_detail}</td>
+          <td>{$ctgav.element_alteration_cancer_drugs}</td>
+          <td>{$ctgav.element_alteration_cancer_drug_family}</td>
+          <td>{$ctgav.element_alteration_cancer_drug_evidence_type}</td>
+          <td>{$level_status['eaci'][strtoupper($ctgav.element_alteration_cancer_drug_evidence_level)]}</td>
+          <td>{$ctgav.element_alteration_cancer_drug_evidence_clinical_significance}</td>
+          <td>{$ctgav.element_alteration_cancer_drug_evidence_support}</td>
+        </tr>
+        {/foreach}
+          </tbody>
+        
+      </table>
+      {/if} 
+      
+      <!--########################--> 
+      {if $type == "gene"}
+      <h4>{$gene} in {$cancer}</h4>
+      <table data-toggle="table" data-height='getHeight()'>
+        <thead>
+          <tr>
+            <th data-sortable='true'>Symbol</th>
+            <th data-sortable='true'>Name</th>
+            <th>Alias</th>
+            <th data-sortable='true'>EntrezGene ID</th>
+            <th data-sortable='true'>Ensembl ID</th>
+            <th data-sortable='true'>Role in Cancer</th>
+          </tr>
+        </thead>
+        <tbody>
+        
+        {foreach $cg as $key=>$val}
+        {if $val.symbol == $gene}
+        <tr>
+          <td><a href="gene_browser.php?start={$gene[0]}&gene={$gene}">{$val.symbol}</a></td>
+          <td>{$val.name}</td>
+          <td>{$val.alias}</td>
+          <td>{$val.entrezgene_id}</td>
+          <td>{$val.ensembl_id}</td>
+          <td>{$val.role}</td>
+        </tr>
+        {/if}
+        {/foreach}
+          </tbody>
+        
+      </table>
+      <p>​​&#8203;​​&#8203;</p>
+      <h4>{$gene} mutations in {$cancer}:</h4>
+      <table data-toggle="table" data-height='getHeight()'>
+        <thead>
+          <tr>
+            <th>Mutation</th>
+            <th data-sortable='true'>Evidence Type</th>
+            <th data-sortable='true'>Evidence Level</th>
+            <th data-sortable='true'>Significance</th>
+            <th>Support (PMID)</th>
+          </tr>
+        </thead>
+        <tbody>
+        
+        {foreach $cga as $cgak=>$cgav}
+        {if isset($feature[{$cgav.element_alteration_detail}])}
+        <tr>
+          <td>{$cgav.element_alteration_detail}</td>
+          <td>{$cgav.element_alteration_cancer_evidence_type}</td>
+          <td>{$level_status['eadci'][strtoupper($cgav.element_alteration_cancer_evidence_level)]}</td>
+          <td>{$cgav.element_alteration_cancer_evidence_clinical_significance}</td>
+          <td>{$cgav.element_alteration_cancer_evidence_support}</td>
+        </tr>
+        {/if}
+        {/foreach}
+          </tbody>
+        
+      </table>
+      <p>​​&#8203;​​&#8203;</p>
+      <h4>{$gene} mutations in {$cancer} treatment:</h4>
+      <table data-toggle="table" data-height='getHeight()'>
+        <thead>
+          <tr>
+            <th>Mutation</th>
+            <th>Drug Name</th>
+            <th>Drug Family</th>
+            <th data-sortable='true'>Evidence Type</th>
+            <th data-sortable='true'>Evidence Level</th>
+            <th data-sortable='true'>Significance</th>
+            <th>Support (PMID)</th>
+          </tr>
+        </thead>
+        <tbody>
+        
+        {foreach $ctga as $ctgak=>$ctgav}
+        {if isset($feature[{$ctgav.element_alteration_detail}])}
+        <tr>
+          <td>{$ctgav.element_alteration_detail}</td>
+          <td>{$ctgav.element_alteration_cancer_drugs}</td>
+          <td>{$ctgav.element_alteration_cancer_drug_family}</td>
+          <td>{$ctgav.element_alteration_cancer_drug_evidence_type}</td>
+          <td>{$level_status['eaci'][strtoupper($ctgav.element_alteration_cancer_drug_evidence_level)]}</td>
+          <td>{$ctgav.element_alteration_cancer_drug_evidence_clinical_significance}</td>
+          <td>{$ctgav.element_alteration_cancer_drug_evidence_support}</td>
+        </tr>
+        {/if}
+        {/foreach}
+          </tbody>
+        
+      </table>
+      {/if}  
+      {/if}
+      <div style="clear:both"></div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="foot">
+      <p>Copyright © 2017 <a href="http://synergylab.info">SynergyLab</a> | All Rights Reserved</p>
+      <p style="font-size:12px;">CancerT is intended for research purposes only. Its information cannot be copied or redistributed. Please review the <a href="terms.php">usage terms</a> before continuing.</p>
+    </div>
+  </div>
+</div>
+</body>
+</html>
