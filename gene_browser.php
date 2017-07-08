@@ -1,7 +1,7 @@
 <?php 
     include_once('lib/config.php');
 	require_once("lib/mysql.php");
-	$db = new mysql("192.168.6.102","root","rlibs402","CGF","conn","utf8");
+	
 	$db -> query("SELECT DISTINCT element_symbol FROM element_cancer_interpretation");
 	while($t = $db->fetch_array()){
 		$f = $t[0][0];
@@ -199,7 +199,7 @@
 //		return '['.json_encode(array("type"=>"GO MF","id"=>"A","content"=>"aaaaaa","level"=>"1234")).']';	
 //	}
 	function geneinfo($gene){
-		$db = new mysql("192.168.6.102","root","rlibs402","CGF","conn","utf8");
+		
 		$db -> query("SELECT * FROM gene_info WHERE gene_symbol = '".$gene."'");
 		$n = 0;
 		$geneinfo = array();
@@ -210,14 +210,14 @@
 	}
 	
 	function GIC($gene){
-		$db = new mysql("192.168.6.102","root","rlibs402","CGF","conn","utf8");
+		
 		$db -> query('SELECT * FROM element_cancer_interpretation WHERE element_symbol ="'.$gene.'"');
 		$t = $db->fetch_array();
 		
 		return $t;
 	}
 	function GAIC($gene){
-		$db = new mysql("192.168.6.102","root","rlibs402","CGF","conn","utf8");
+		
 		$db -> query("SELECT a.* FROM element_alteration_cancer_interpretation a INNER JOIN ((SELECT phos_detail FROM feature_phos WHERE phos_symbol = '".$gene."') UNION (SELECT snv_detail FROM feature_snv  WHERE snv_symbol = '".$gene."') UNION (SELECT sv_detail FROM feature_sv  WHERE sv_symbol = '".$gene."') UNION (SELECT cnv_detail FROM feature_cnv  WHERE cnv_symbol = '".$gene."') UNION (SELECT ex_detail FROM feature_expression  WHERE ex_symbol = '".$gene."') UNION (SELECT met_detail FROM feature_methylation  WHERE met_symbol = '".$gene."')) b ON a.element_alteration_detail = b.phos_detail");
 		$gaic = array();
 		while($t = $db->fetch_array()){
@@ -226,7 +226,7 @@
 		return $gaic;
 	}
 	function GAICT($gene){
-		$db = new mysql("192.168.6.102","root","rlibs402","CGF","conn","utf8");
+		
 		$db -> query("SELECT a.* FROM element_alteration_drug_cancer_interpretation a INNER JOIN ((SELECT phos_detail FROM feature_phos WHERE phos_symbol = '".$gene."') UNION (SELECT snv_detail FROM feature_snv  WHERE snv_symbol = '".$gene."') UNION (SELECT sv_detail FROM feature_sv  WHERE sv_symbol = '".$gene."') UNION (SELECT cnv_detail FROM feature_cnv  WHERE cnv_symbol = '".$gene."') UNION (SELECT ex_detail FROM feature_expression  WHERE ex_symbol = '".$gene."') UNION (SELECT met_detail FROM feature_methylation  WHERE met_symbol = '".$gene."')) b ON a.element_alteration_detail = b.phos_detail");
 		$gaict = array();
 		while($t = $db->fetch_array()){
@@ -235,7 +235,7 @@
 		return $gaict;
 	}
 	function level_status(){
-		$db = new mysql("192.168.6.102","root","rlibs402","CGF","conn","utf8");
+		
 		$db -> query('SELECT * FROM level_status');
 		$level=array();
 		while($t=$db->fetch_array()){

@@ -1,8 +1,9 @@
 <?php
 echo gene_info();
+
 function gene_info(){
-	require_once("mysql.php");
-		$db = new mysql("192.168.6.102","root","rlibs402","CGF","conn","utf8");
+	include_once('lib/config.php');
+		
 		$db -> query("SELECT * FROM element_cancer_interpretation");
 		//$db -> query("SELECT * FROM gene_info");
 		$gene = array();

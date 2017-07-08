@@ -1,7 +1,7 @@
 <?php
 
 	require_once("lib/mysql.php");
-	$db = new mysql("192.168.6.102","root","rlibs402","CGF","conn","utf8"); 
+	 
     include_once('lib/config.php');
 	$smarty -> assign("title","Search Tool");
 	
@@ -117,7 +117,7 @@
 	}
 	
 	function cg($cancer){
-		$db = new mysql("192.168.6.102","root","rlibs402","CGF","conn","utf8");
+		
 		$db -> query('SELECT element_symbol,element_role_in_cancer FROM element_cancer_interpretation WHERE (element_cancer_oncotree_type LIKE "%;'.$cancer.'" or element_cancer_oncotree_type LIKE "'.$cancer.';%" or element_cancer_oncotree_type LIKE "'.$cancer.'" or element_cancer_oncotree_type LIKE "%;'.$cancer.';%")');
 		$gene = array();
 		while($t=$db->fetch_array()){
@@ -141,7 +141,7 @@
 	}
 	
 	function level_status(){
-		$db = new mysql("192.168.6.102","root","rlibs402","CGF","conn","utf8");
+		
 		$db -> query('SELECT * FROM level_status');
 		$level=array();
 		while($t=$db->fetch_array()){
@@ -151,7 +151,7 @@
 	}
 	
 	function cga($cancer){
-		$db = new mysql("192.168.6.102","root","rlibs402","CGF","conn","utf8");
+		
 		$db -> query('SELECT * FROM element_alteration_cancer_interpretation WHERE (element_alteration_oncotree_type LIKE "%;'.$cancer.'" or element_alteration_oncotree_type LIKE "'.$cancer.';%" or element_alteration_oncotree_type LIKE "'.$cancer.'" or element_alteration_oncotree_type LIKE "%;'.$cancer.';%")');
 		$cga = array();
 		while($t = $db->fetch_array()){
@@ -161,7 +161,7 @@
 	}
 	
 	function ctga($cancer){
-		$db = new mysql("192.168.6.102","root","rlibs402","CGF","conn","utf8");
+		
 		$db -> query('SELECT * FROM element_alteration_drug_cancer_interpretation WHERE (element_alteration_cancer_oncotree_type LIKE "%;'.$cancer.'" or element_alteration_cancer_oncotree_type LIKE "'.$cancer.';%" or element_alteration_cancer_oncotree_type LIKE "'.$cancer.'" or element_alteration_cancer_oncotree_type LIKE "%;'.$cancer.';%")');
 		$ctga = array();
 		while($t = $db->fetch_array()){
@@ -171,7 +171,7 @@
 	}
 	
 	function geneinfo($gene){
-		$db = new mysql("192.168.6.102","root","rlibs402","CGF","conn","utf8");
+		
 		$db -> query("SELECT * FROM gene_info WHERE gene_symbol = '".$gene."'");
 		$geneinfo = array();
 		while($t = $db->fetch_array()){
@@ -181,7 +181,7 @@
 	}
 	
 	function feature($gene){
-		$db = new mysql("192.168.6.102","root","rlibs402","CGF","conn","utf8");
+		
 		$jss=array();
 		
 		$db ->query("SELECT cnv_detail,cnv_content FROM feature_cnv WHERE cnv_symbol = '".$gene."'");
@@ -216,7 +216,7 @@
 		return $jss;
 	}
 	function site(){
-		$db = new mysql("192.168.6.102","root","rlibs402","CGF","conn","utf8");
+		
 		
 		$db ->query("SELECT * FROM primary_site");
 		while($t = $db->fetch_array()){

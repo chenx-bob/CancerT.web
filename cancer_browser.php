@@ -1,7 +1,7 @@
 <?php 
     include_once('lib/config.php');
 	require_once("lib/mysql.php");
-	$db = new mysql("192.168.6.102","root","rlibs402","CGF","conn","utf8");
+	
 	
 	$db -> query("SELECT * FROM cancer");
 	$tissues = array();		
@@ -70,7 +70,7 @@
 		$smarty -> display("cancer_browser-1.html");
 	}
 	function cg($cancer){
-		$db = new mysql("192.168.6.102","root","rlibs402","CGF","conn","utf8");
+		
 		$db -> query('SELECT element_symbol,element_role_in_cancer FROM element_cancer_interpretation WHERE (element_cancer_oncotree_type LIKE "%;'.$cancer.'" or element_cancer_oncotree_type LIKE "'.$cancer.';%" or element_cancer_oncotree_type LIKE "'.$cancer.'" or element_cancer_oncotree_type LIKE "%;'.$cancer.';%")');
 		$gene = array();
 		while($t=$db->fetch_array()){
@@ -93,7 +93,7 @@
 		return $gene;
 	}
 	function cga($cancer){
-		$db = new mysql("192.168.6.102","root","rlibs402","CGF","conn","utf8");
+		
 		$db -> query('SELECT * FROM element_alteration_cancer_interpretation WHERE (element_alteration_oncotree_type LIKE "%;'.$cancer.'" or element_alteration_oncotree_type LIKE "'.$cancer.';%" or element_alteration_oncotree_type LIKE "'.$cancer.'" or element_alteration_oncotree_type LIKE "%;'.$cancer.';%")');
 		$cga = array();
 		while($t = $db->fetch_array()){
@@ -102,7 +102,7 @@
 		return $cga;
 	}
 	function ctga($cancer){
-		$db = new mysql("192.168.6.102","root","rlibs402","CGF","conn","utf8");
+		
 		$db -> query('SELECT * FROM element_alteration_drug_cancer_interpretation WHERE (element_alteration_cancer_oncotree_type LIKE "%;'.$cancer.'" or element_alteration_cancer_oncotree_type LIKE "'.$cancer.';%" or element_alteration_cancer_oncotree_type LIKE "'.$cancer.'" or element_alteration_cancer_oncotree_type LIKE "%;'.$cancer.';%")');
 		$ctga = array();
 		while($t = $db->fetch_array()){
@@ -111,7 +111,7 @@
 		return $ctga;
 	}
 	function geneinfo($gene){
-		$db = new mysql("192.168.6.102","root","rlibs402","CGF","conn","utf8");
+		
 		$db -> query("SELECT * FROM gene_info WHERE gene_symbol = '".$gene."'");
 		$geneinfo = array();
 		while($t = $db->fetch_array()){
@@ -120,7 +120,7 @@
 		return $geneinfo;
 	}
 	function cancerdrug($cancer){
-		$db = new mysql("192.168.6.102","root","rlibs402","CGF","conn","utf8");
+		
 		$db -> query("SELECT * FROM cancer_drug WHERE Conditions_oncotree = '".$cancer."'");
 		$cancerdrug = array();
 		while($t = $db->fetch_array()){
@@ -129,7 +129,7 @@
 		return $cancerdrug;
 	}
 	function level_status(){
-		$db = new mysql("192.168.6.102","root","rlibs402","CGF","conn","utf8");
+		
 		$db -> query('SELECT * FROM level_status');
 		$level=array();
 		while($t=$db->fetch_array()){

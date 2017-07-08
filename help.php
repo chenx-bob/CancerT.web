@@ -14,7 +14,7 @@
 	
 	
 	function drug(){
-		$db = new mysql("192.168.6.102","root","rlibs402","CGF","conn","utf8");
+		
 		$db -> query('select * from Drug');
 		$drugs = array();
 		while($t = $db->fetch_array()){
@@ -24,7 +24,7 @@
 	}
 	
 	function pct_drug($gene){
-		$db = new mysql("192.168.6.102","root","rlibs402","CGF","conn","utf8");
+		
 		$db -> query('select * from pct_therapy_drug where gene="'.$gene.'"');
 		$pct_drug = array();
 		while($t = $db->fetch_array()){
@@ -33,7 +33,7 @@
 		return $pct_drug;
 	}
 	function pct_gene($gene){
-		$db = new mysql("192.168.6.102","root","rlibs402","CGF","conn","utf8");
+		
 		$db -> query('select * from pct_therapy where gene="'.$gene.'"');
 		$pct_gene = array();
 		$pct_gene = $db->fetch_array();
@@ -41,7 +41,7 @@
 	}
 	
 	function pct_genelist(){
-		$db = new mysql("192.168.6.102","root","rlibs402","CGF","conn","utf8");
+		
 		$db -> query('select * from pct_therapy_drug');
 		$genelist = array();
 		while($t = $db->fetch_array()){

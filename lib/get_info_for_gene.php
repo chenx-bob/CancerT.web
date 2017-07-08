@@ -1,6 +1,6 @@
 <?php
-require_once("mysql.php");
-$db = new mysql("192.168.6.102","root","rlibs402","CGF","conn","utf8");
+include_once('lib/config.php');
+
 $type = $_GET['type'];
 //$type = "gene_type";
 switch($type){
